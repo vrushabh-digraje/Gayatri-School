@@ -1,0 +1,36 @@
+
+{
+  "prompts": [
+    {
+      "page": "Home",
+      "id": "hero_bg",
+      "prompt": "Cinematic wide shot of a modern Indian school building with glass windows, landscaped gardens, and students in uniform entering during morning sunlight, realistic, 8k",
+      "alt": "Gayatri Vidya Niketan school building exterior"
+    },
+    {
+      "page": "Home",
+      "id": "principal_greet",
+      "prompt": "Professional portrait of a middle-aged female principal smiling warmly in a well-lit office with books and educational trophies in the background, high quality photography",
+      "alt": "Principal of Gayatri Vidya Niketan"
+    },
+    {
+      "page": "About",
+      "id": "students_studying",
+      "prompt": "Diverse group of happy Indian school children sitting in a circle in a bright classroom, reading colorful books together, blurred background, soft natural lighting",
+      "alt": "Students engaged in group study"
+    },
+    {
+      "page": "Facilities",
+      "id": "smart_classroom",
+      "prompt": "Interior of a modern classroom with a large interactive digital touch-screen board, ergonomic desks, and colorful walls, educational setting",
+      "alt": "Modern smart classroom facility"
+    }
+  ],
+  "seo": {
+    "title_template": "%s | Gayatri Vidya Niketan Pune",
+    "meta_description": "Gayatri Vidya Niketan is a premier CBSE school in Pune offering high-quality education, state-of-the-art facilities, and holistic development for students.",
+    "keywords": "school in pune, best cbse school pcmc, gayatri school pune, gayatri vidya niketan admissions, quality education pune, secondary school pimpri chinchwad"
+  },
+  "sitemap_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"><url><loc>https://gayatrividyaniketan.edu/</loc><priority>1.0</priority></url><url><loc>https://gayatrividyaniketan.edu/#/about</loc><priority>0.8</priority></url><url><loc>https://gayatrividyaniketan.edu/#/admissions</loc><priority>0.9</priority></url><url><loc>https://gayatrividyaniketan.edu/#/gallery</loc><priority>0.7</priority></url><url><loc>https://gayatrividyaniketan.edu/#/contact</loc><priority>0.8</priority></url></urlset>",
+  "robots_txt": "User-agent: *\nAllow: /\nSitemap: https://gayatrividyaniketan.edu/sitemap.xml"
+}
