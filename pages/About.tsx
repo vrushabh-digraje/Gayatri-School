@@ -203,6 +203,14 @@ const About: React.FC = () => {
             alt="Founder"
             className="w-full h-auto object-cover rounded-[2rem]"
           />
+          <div className="text-center pt-4 pb-2">
+            <h3 className="text-xl font-black text-[#1e3a8a] tracking-tight">
+              Hon. Mr. Vinayakrao Bhongale
+            </h3>
+            <p className="text-sm font-bold text-[#f97316] uppercase tracking-wider mt-1">
+              Founder & Chairman
+            </p>
+          </div>
         </div>
       </div>
 
