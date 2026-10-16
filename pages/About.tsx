@@ -208,7 +208,7 @@ const About: React.FC = () => {
               Hon. Mr. Vinayakrao Bhongale
             </h3>
             <p className="text-sm font-bold text-[#f97316] uppercase tracking-wider mt-1">
-              Founder & Chairman
+              Founder & Chairman, SVSPM
             </p>
           </div>
         </div>

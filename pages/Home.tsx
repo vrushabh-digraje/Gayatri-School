@@ -234,7 +234,7 @@ const Home: React.FC = () => {
         Hon. Mr. Vinayakrao Bhongale
       </p>
       <p className="text-sm text-gray-500">
-        Founder & Chairman
+        Founder & Chairman, SVSPM
       </p>
     </div>
 
