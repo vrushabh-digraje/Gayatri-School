@@ -233,8 +233,11 @@ const Home: React.FC = () => {
       <p className="text-lg font-bold text-[#1e3a8a]">
         Hon. Mr. Vinayakrao Bhongale
       </p>
-      <p className="text-sm text-gray-500">
-        Founder & Chairman, SVSPM
+      <p className="text-sm font-bold text-[#f97316] uppercase tracking-wider mt-1">
+        Founder & Chairman
+      </p>
+      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-0.5">
+        SVSPM
       </p>
     </div>
 
