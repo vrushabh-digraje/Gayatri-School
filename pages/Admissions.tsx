@@ -148,8 +148,8 @@ const Admissions: React.FC = () => {
              
              <div className="relative z-10 w-full max-w-lg">
                 <img 
-                  src="BhongaleSir.jpeg" 
-                  alt="Admission Counselor" 
+                  src="/BhongaleSirAdmission.png" 
+                  alt="Hon. Mr. Vinayakrao Bhongale" 
                   className="w-full h-auto object-cover rounded-3xl"
                   style={{ maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)' }}
                 />
