@@ -72,7 +72,7 @@ const About: React.FC = () => {
     {
       name: "Hon'ble Sarita Vikhe Patil",
       role: "Director, SVSPM'S",
-      image: "Sarita.jpg",
+      image: "SaritaPatil.jpg",
       colorClass: "text-[#f97316]",
       location: "SVSPM's Gayatri Group of Schools",
       bio: "As the M Director of GEMS, Mrs. Sarita Vikhe Patil has shown exemplary leadership in shaping the future of education.",
@@ -81,7 +81,7 @@ const About: React.FC = () => {
     {
       name: "Hon'ble Anjali Bhagwat",
       role: "CEO, SVSPM'S",
-      image: "Anjali.jpg",
+      image: "AnjaliBhagwat.png",
       colorClass: "text-[#f97316]",
       location: "SVSPM's Gayatri Group of Schools",
       bio: "As the CEO of GEMS, Smt. Anjali Bhagwat has shown exemplary leadership in shaping the future of education.",
