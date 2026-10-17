@@ -116,6 +116,16 @@ const Events: React.FC = () => {
     },
     {
       id: 11,
+      title: "Christmas Celebration",
+      date: "Dec 23, 2026",
+      time: "During School Hours",
+      location: "School Auditorium",
+      category: "Cultural",
+      description: "Festive celebration featuring Christmas carols, Santa Claus visit, skits, exchange of greeting cards, and spreading joy.",
+      image: "/cultural.JPG"
+    },
+    {
+      id: 12,
       title: "Annual Day Celebration",
       date: "Dec 24, 2026",
       time: "As Per Event Schedule",
@@ -125,7 +135,7 @@ const Events: React.FC = () => {
       image: "/AnnualDay.JPG"
     },
     {
-      id: 12,
+      id: 13,
       title: "Swami Vivekananda Jayanti & Kite Activity",
       date: "Jan 09 - 12, 2027",
       time: "During School Hours",
@@ -135,7 +145,17 @@ const Events: React.FC = () => {
       image: "/sa.JPG"
     },
     {
-      id: 13,
+      id: 14,
+      title: "Republic Day & Art Exhibition (3 Days)",
+      date: "Jan 25 - 27, 2027",
+      time: "9:00 AM - 1:00 PM",
+      location: "School Ground & Art Gallery",
+      category: "Exhibition",
+      description: "Grand 3-day student fine arts and crafts exhibition paired with patriotic Republic Day parade, flag unfurling, and cultural performances.",
+      image: "/Exi.jpg"
+    },
+    {
+      id: 15,
       title: "Science & Robotics Exhibition",
       date: "Feb 13, 2027",
       time: "During School Hours",
@@ -145,7 +165,17 @@ const Events: React.FC = () => {
       image: "/RoboticsLab1.JPG"
     },
     {
-      id: 14,
+      id: 16,
+      title: "Chhatrapati Shivaji Maharaj Jayanti",
+      date: "Feb 19, 2027",
+      time: "During School Hours",
+      location: "School Campus Ground",
+      category: "Cultural",
+      description: "Honoring the legendary Maratha warrior king with traditional lezim performances, historical speeches, powadas, and inspiring student tributes.",
+      image: "/sa.JPG"
+    },
+    {
+      id: 17,
       title: "Marathi Divas & National Science Day",
       date: "Feb 27 - 28, 2027",
       time: "During School Hours",
@@ -153,6 +183,16 @@ const Events: React.FC = () => {
       category: "Academic",
       description: "Tribute to Marathi language literature and heritage followed by National Science Day research experiments and live demonstrations.",
       image: "/Pract1.jpg"
+    },
+    {
+      id: 18,
+      title: "International Women’s Day",
+      date: "Mar 08, 2027",
+      time: "During School Hours",
+      location: "School Auditorium",
+      category: "Celebration",
+      description: "Felicitation of women faculty, guest talks on women empowerment, inspiring leadership presentations, and student appreciation sessions.",
+      image: "/Feli2.jpg"
     }
   ];
 
