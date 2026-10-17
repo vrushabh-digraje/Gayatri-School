@@ -99,8 +99,10 @@ const App: React.FC = () => {
             <Route path="/blog/:id" element={<BlogPostDetail />} />
             
             {/* Gallery / Media */}
+            <Route path="/events" element={<Events />} />
             <Route path="/media/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/achievements" element={<Achievements />} />
             <Route path="/media/achievements" element={<Achievements />} />
             
             <Route path="/contact" element={<Contact />} />
