@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MapPin, Clock, ArrowRight, Download } from 'lucide-react';
+import { Calendar, MapPin, Clock, ArrowRight } from 'lucide-react';
 
 interface SchoolEvent {
   id: number;
@@ -217,18 +217,9 @@ const Events: React.FC = () => {
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-none mb-6">
             Upcoming Events
           </h1>
-          <p className="text-slate-500 font-medium max-w-2xl mx-auto text-lg mb-8">
+          <p className="text-slate-500 font-medium max-w-2xl mx-auto text-lg">
             Stay updated with the latest happenings, academic milestones, and celebration days at Gayatri English Medium School.
           </p>
-          <a
-            href="/Calendar-2026-CBSE.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#1e3a8a] hover:bg-blue-900 text-white font-bold text-sm px-7 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
-          >
-            <Download size={16} className="text-[#f97316]" />
-            Download Academic Calendar 2026–27 (PDF)
-          </a>
         </div>
 
         {/* Events Grid */}
