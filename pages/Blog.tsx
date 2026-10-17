@@ -20,8 +20,48 @@ interface BlogPost {
 
 const Blog: React.FC = () => {
   const blogs: BlogPost[] = [
-     {
+    {
       id: 1,
+      slug: "ai-tutoring-tools-changing-home-learning",
+      title: "How AI Tutoring Tools Are Changing the Way Students Learn at Home",
+      author: "GEMS Moshi",
+      date: "April 24, 2026",
+      readTime: "5min",
+      excerpt: "AI tutors can make home learning more personal and responsive, but they work best when technology, teachers and parents each play the right role.",
+      image: "/Blogs/blog45.png"
+    },
+    {
+      id: 2,
+      slug: "schools-support-student-mental-health-without-stigma",
+      title: "How Schools Can Support Student Mental Health Without Stigma",
+      author: "GEMS Moshi",
+      date: "April 23, 2026",
+      readTime: "5min",
+      excerpt: "Mental health support becomes effective when it is part of everyday school culture, not something reserved only for a moment of crisis.",
+      image: "/Blogs/blog46.png"
+    },
+    {
+      id: 3,
+      slug: "board-exam-preparation-start-with-stress-management",
+      title: "Why Board Exam Preparation Should Start With Stress Management, Not Just Studying",
+      author: "GEMS Moshi",
+      date: "April 22, 2026",
+      readTime: "5min",
+      excerpt: "A longer study timetable is not always a better one. Students prepare more effectively when calm, sleep and realistic planning come first.",
+      image: "/Blogs/blog47.png"
+    },
+    {
+      id: 4,
+      slug: "parent-school-collaboration-student-success",
+      title: "Why Parent-School Collaboration Is the New Formula for Student Success",
+      author: "GEMS Moshi",
+      date: "April 21, 2026",
+      readTime: "5min",
+      excerpt: "Students make stronger progress when home and school share information, expectations and responsibility instead of working in separate worlds.",
+      image: "/Blogs/blog48.png"
+    },
+     {
+      id: 5,
       slug: "best-cbse-school-in-moshi-academic-excellence",
       title: "Why GEMS CBSE School Is the Best CBSE School in Moshi for Academic Excellence",
       author: "GEMS Moshi",
@@ -31,7 +71,7 @@ const Blog: React.FC = () => {
       image: "/Blogs/blog44.png"
     },
     {
-      id: 2,
+      id: 6,
       slug: "best-school-in-pune-for-holistic-development",
       title: "Best School in Pune for Holistic Development",
       author: "GEMS Moshi",
@@ -41,7 +81,7 @@ const Blog: React.FC = () => {
       image: "/Blogs/blog43.png"
     },
     {
-      id: 3,
+      id: 7,
       slug: "robotics-school-in-pcmc-for-future-innovators",
       title: "Robotics School in PCMC for Future Innovators",
       author: "GEMS Moshi",
@@ -51,7 +91,7 @@ const Blog: React.FC = () => {
       image: "/Blogs/blog42.png"
     },
     {
-      id: 4,
+      id: 8,
       slug: "coding-and-ai-learning-for-students",
       title: "Coding and AI Learning for Students",
       author: "GEMS Moshi",
@@ -61,7 +101,7 @@ const Blog: React.FC = () => {
       image: "/Blogs/blog41.png"
     },
     {
-      id: 5,
+      id: 9,
       slug: "best-school-near-chikhali-and-spine-road",
       title: "Best School Near Chikhali and Spine Road",
       author: "GEMS Moshi",
@@ -71,7 +111,7 @@ const Blog: React.FC = () => {
       image: "/Blogs/blog40.png"
     },
     {
-      id: 6,
+      id: 10,
       slug: "why-robotics-education-gives-students-a-competitive-edge",
       title: "Why Robotics Education Gives Students a Competitive Edge",
       author: "GEMS Moshi",
@@ -81,7 +121,7 @@ const Blog: React.FC = () => {
       image: "/Blogs/blog39.png"
     },
     {
-      id: 7,
+      id: 11,
       slug: "read-to-lead-program-for-students",
       title: "Read to Lead Program for Students",
       author: "GEMS Moshi",
@@ -91,7 +131,7 @@ const Blog: React.FC = () => {
       image: "/Blogs/blog38.png"
     },
     {
-      id: 8,
+      id: 12,
       slug: "why-ai-awareness-is-important-for-students-2026",
       title: "Why AI Awareness Is Important for Students in 2026",
       author: "GEMS Moshi",
@@ -101,7 +141,7 @@ const Blog: React.FC = () => {
       image: "/Blogs/blog37.png"
     },
     {
-      id: 9,
+      id: 13,
       slug: "best-school-in-moshi-nursery-to-secondary",
       title: "Best School in Moshi for Nursery to Secondary Education",
       author: "GEMS Moshi",
@@ -111,7 +151,7 @@ const Blog: React.FC = () => {
       image: "/Blogs/blog36.png"
     },
     {
-      id: 10,
+      id: 14,
       slug: "best-cbse-school-in-pcmc-holistic-development",
       title: "Best CBSE School in PCMC with Holistic Development",
       author: "GEMS Moshi",
@@ -121,7 +161,7 @@ const Blog: React.FC = () => {
       image: "/Blogs/blog35.png"
     },
     {
-    id: 11,
+    id: 15,
     slug: "coding-and-ai-learning-for-students-2026",
     title: "Coding and AI Learning for Students: Why It Matters in 2026",
     author: "GEMS Moshi",
@@ -131,7 +171,7 @@ const Blog: React.FC = () => {
     image: "/Blogs/blog34.png"
     },
     {
-    id: 12,
+    id: 16,
     slug: "modern-education-trends-india-2026",
     title: "Top Education Trends in India 2026: What Parents Should Know",
     author: "GEMS Moshi",
@@ -141,7 +181,7 @@ const Blog: React.FC = () => {
     image: "/Blogs/blog33.png"
     },
     {
-    id: 13,
+    id: 17,
     slug: "best-cbse-school-near-me-pcmc-2026",
     title: "How to Find the Best CBSE School Near You in PCMC (2026 Guide)",
     author: "GEMS Moshi",
@@ -151,7 +191,7 @@ const Blog: React.FC = () => {
     image: "/Blogs/blog32.png"
     },
     {
-    id: 14,
+    id: 18,
     slug: "importance-of-pre-primary-education-2026",
     title: "Why Pre-Primary Education is Important for Your Child in 2026",
     author: "GEMS Moshi",
@@ -161,7 +201,7 @@ const Blog: React.FC = () => {
     image: "/Blogs/blog31.png"
     },
     {
-    id: 15,
+    id: 19,
     slug: "why-skill-based-learning-is-important-2026",
     title: "Why Skill-Based Learning is More Important Than Marks in 2026",
     author: "GEMS Moshi",
@@ -172,7 +212,7 @@ const Blog: React.FC = () => {
     },
 
     {
-    id: 16,
+    id: 20,
     slug: "how-parents-can-support-children-during-exams",
     title: "How Parents Can Support Children During Exams (2026 Guide)",
     author: "GEMS Moshi",
@@ -182,7 +222,7 @@ const Blog: React.FC = () => {
     image: "/Blogs/blog29.png"
     },
     {
-    id: 17,
+    id: 21,
     slug: "best-summer-vacation-activities-for-students-2026",
     title: "Best Summer Vacation Activities for Students (2026 Guide)",
     author: "GEMS Moshi",
@@ -192,7 +232,7 @@ const Blog: React.FC = () => {
     image: "/Blogs/blog28.png"
     },
     {
-    id: 18,
+    id: 22,
     slug: "mental-health-tips-for-students-during-exams",
     title: "Mental Health Tips for Students During Exams (2026 Guide)",
     author: "GEMS Moshi",
@@ -202,7 +242,7 @@ const Blog: React.FC = () => {
     image: "/Blogs/blog27.png"
     },
     {
-    id: 19,
+    id: 23,
     slug: "cbse-board-exam-tips-2026",
     title: "CBSE Board Exam Tips 2026: Smart Strategies to Score 90%+",
     author: "GEMS Moshi",
@@ -212,7 +252,7 @@ const Blog: React.FC = () => {
     image: "/Blogs/blog26.png"
     },
     {
-      id: 20,
+      id: 24,
       slug: "how-to-choose-best-school-in-2026",
       title: "How to Choose the Best School for Your Child in 2026 (Parent Guide)",
       author: "GEMS Moshi",
@@ -223,7 +263,7 @@ const Blog: React.FC = () => {
     },
   
     {
-      id: 41,
+      id: 25,
       slug: "sports-achievements-india",
       title: "Sports Achievements in India & The Road to Improvement",
       author: "GEMS Moshi",
@@ -233,7 +273,7 @@ const Blog: React.FC = () => {
       image: "Sports4.jpg"
     },
     {
-      id: 42,
+      id: 26,
       slug: "ai-in-image-generation",
       title: "AI in Image Generation",
       author: "AI",
@@ -243,7 +283,7 @@ const Blog: React.FC = () => {
       image: "/AI.jpg"
     },
     {
-      id: 43,
+      id: 27,
       slug: "top-10-things-about-google",
       title: "Top 10 things about google",
       author: "Gayatri",
@@ -253,7 +293,7 @@ const Blog: React.FC = () => {
       image: "/Google.jpg"
     },
     {
-        id: 44,
+        id: 28,
         slug: "study-habits-secondary",
         title: "Effective Study Habits for Secondary Students",
         author: "Academic Dept",

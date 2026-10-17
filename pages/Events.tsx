@@ -102,7 +102,7 @@ const Events: React.FC = () => {
       location: "School Sports Ground",
       category: "Sports",
       description: "The premier athletic meet of the year featuring torch lighting, march past, sprint races, relays, team championships, and medal awards.",
-      image: "/SportsDay.jpg"
+      image: "/Sports2.jpg"
     },
     {
       id: 10,
@@ -162,7 +162,7 @@ const Events: React.FC = () => {
       location: "School Ground & Art Gallery",
       category: "Exhibition",
       description: "Grand 3-day student fine arts and crafts exhibition paired with patriotic Republic Day parade, flag unfurling, and cultural performances.",
-      image: "/RepublicDayArt.png"
+      image: "/Exi2.jpg"
     },
     {
       id: 16,

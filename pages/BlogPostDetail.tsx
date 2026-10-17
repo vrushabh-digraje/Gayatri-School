@@ -7,6 +7,724 @@ const BlogPostDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
 
   const posts = {
+'ai-tutoring-tools-changing-home-learning': {
+  meta: "GEMS Moshi",
+  date: "24 Apr 2026",
+  title: "How AI Tutoring Tools Are Changing the Way Students Learn at Home",
+  intro: "AI tutors can make home learning more personal and responsive, but they work best when technology, teachers and parents each play the right role.",
+  content: (
+    <div className="max-w-4xl mx-auto">
+      <p className="text-slate-600 text-lg md:text-xl font-medium leading-[1.8] text-justify mb-10">
+        Homework at home often follows a familiar pattern. A child gets stuck on one question, tries it twice, and then waits for a parent or teacher to help. AI tutoring tools are beginning to change that moment. Instead of simply showing an answer, many tools can offer a hint, explain a concept in another way, create a fresh practice question or adjust the level of difficulty. For students, this can make learning at home feel less like a fixed worksheet and more like a conversation.
+      </p>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          What Exactly Is an AI Tutoring Tool?
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          An AI tutoring tool is a digital learning assistant that responds to a student’s input. Some are built into learning platforms, while others work like chat-based study partners. Depending on the tool, it may check an answer, identify a gap in understanding, recommend the next topic or give feedback on writing.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          The important word is support. An AI tutor is not a replacement for a classroom teacher, a parent or the effort required from the student. It is one more resource that can help a learner practise between lessons.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Learning Can Move at the Child’s Pace
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          In a classroom, a teacher has to balance the needs of many learners. At home, an AI tool can give a student extra time on fractions, grammar or scientific concepts without making the child feel that the rest of the class is waiting. A learner who understands quickly can also move to a more challenging question instead of repeating work that is already familiar.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          This kind of pacing can be especially useful during revision. Rather than reviewing every chapter in exactly the same way, students can spend more time where they need it most.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Feedback Arrives While the Question Is Still Fresh
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          When feedback comes immediately, students can connect it to the step they just took. If a mathematics answer is incorrect, the tool may point to the stage where the method went wrong. If a paragraph is unclear, it may ask the writer to add an example or reorganise an idea.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Quick feedback can prevent small misunderstandings from becoming habits. It also encourages students to try again. The value is not in receiving a perfect answer instantly; it is in understanding why an answer works.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Students Can Ask Without Feeling Embarrassed
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Some children hesitate to ask a question because they worry it may sound too basic. At home, a digital tutor gives them a private space to ask for another explanation. They can request a simpler example, revise an earlier concept or practise the same skill several times.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          That confidence can carry back into the classroom. A student who has clarified the basics is often more willing to participate in discussion and attempt difficult work.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Better Study Habits, When the Tool Is Used Well
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          AI can also help students organise learning. It can break a large topic into smaller tasks, suggest a revision plan or generate a short quiz. Used thoughtfully, these features can help children become more independent.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          However, independence does not mean handing over the thinking. Copying a generated response may finish an assignment, but it does not build knowledge. Students should use AI to ask for clues, compare methods, test recall and review their own work. They should still solve, write and explain in their own words.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          The Role of Parents Is Changing, Not Disappearing
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Parents do not need to become subject experts or monitor every click. Their most useful role is to create healthy boundaries and stay interested in the learning process. Ask questions such as, ‘What did the tool help you understand?’ or ‘Can you explain that idea without looking at the screen?’ These simple prompts reveal whether real learning has taken place.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Families should also decide when AI is appropriate, protect personal information and keep screen time balanced with reading, handwriting, physical activity, sleep and conversation.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          What Responsible Use Looks Like
+        </h2>
+        <ul className="space-y-3 text-slate-700 text-lg font-medium leading-relaxed">
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Choose age-appropriate tools and review their privacy settings.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Use AI for hints and explanations before asking for complete answers.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Check important information against textbooks and teacher guidance.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Never share private details, passwords, photographs or school records.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Keep devices away during rest, meals and bedtime.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Tell teachers when AI has been used for an assignment, where required.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Teachers Remain at the Centre of Learning
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          A tool can notice patterns in answers, but it does not know a child in the way a good teacher does. Teachers understand motivation, classroom relationships, effort, creativity and the many reasons a student may struggle on a particular day. They also help children judge sources, discuss ideas and learn with others.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          The most promising approach is not AI versus teachers. It is teachers guiding students to use new tools with purpose, honesty and good judgement.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          A Useful Assistant, Not an Easy Shortcut
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          AI tutoring tools are making home learning more responsive, but their success depends on how they are used. When technology gives timely practice, teachers provide direction and parents encourage healthy routines, students gain more than correct answers. They learn how to ask better questions, reflect on mistakes and take ownership of progress.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          For families in Moshi and PCMC, the conversation around digital learning should begin with one question: does this tool help the child think? If the answer is yes, and its use is safe and balanced, AI can be a valuable addition to learning at home.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-8 md:p-12 rounded-[2.5rem] text-white shadow-lg mb-8">
+        <h3 className="text-2xl md:text-3xl font-black mb-4">
+          Looking for a CBSE School That Values Confident, Responsible and Future-Ready Learners?
+        </h3>
+        <p className="text-white/95 text-lg font-medium mb-6 leading-relaxed">
+          Connect with Gayatri English Medium School, Moshi, Pune, to learn more about admissions and our approach to holistic education.
+        </p>
+        <Link 
+          to="/admissions" 
+          className="inline-flex items-center gap-2 bg-white text-[#f97316] font-black text-sm uppercase tracking-wider px-8 py-4 rounded-full hover:bg-orange-50 transition shadow-md"
+        >
+          Explore Admissions & Enquire
+        </Link>
+      </div>
+
+      <p className="text-slate-500 text-lg font-medium mt-10">
+        Related Reads:{" "}
+        <Link to="/blog/coding-and-ai-learning-for-students" className="text-[#f97316] font-semibold hover:underline">
+          Coding and AI Learning for Students
+        </Link>{" "}
+        |{" "}
+        <Link to="/blog/why-robotics-education-gives-students-a-competitive-edge" className="text-[#f97316] font-semibold hover:underline">
+          Why Robotics Education Gives Students a Competitive Edge
+        </Link>{" "}
+        |{" "}
+        <Link to="/blog/parent-school-collaboration-student-success" className="text-[#f97316] font-semibold hover:underline">
+          Parent-School Collaboration for Student Success
+        </Link>
+      </p>
+    </div>
+  )
+},
+'schools-support-student-mental-health-without-stigma': {
+  meta: "GEMS Moshi",
+  date: "23 Apr 2026",
+  title: "How Schools Can Support Student Mental Health Without Stigma",
+  intro: "Mental health support becomes effective when it is part of everyday school culture, not something reserved only for a moment of crisis.",
+  content: (
+    <div className="max-w-4xl mx-auto">
+      <p className="text-slate-600 text-lg md:text-xl font-medium leading-[1.8] text-justify mb-6">
+        A student does not always say, ‘I am struggling.’ Sometimes the signs appear as unfinished work, frequent headaches, sudden anger, silence in class or a drop in attendance. These behaviours are easy to label as laziness or indiscipline. They may also be a child’s way of showing that something feels too difficult to manage alone.
+      </p>
+      <p className="text-slate-600 text-lg md:text-xl font-medium leading-[1.8] text-justify mb-10">
+        Schools are in a unique position to notice these changes early. Children spend a large part of their day with teachers and classmates, which means school can become an important source of stability. The challenge is to offer support without making a student feel singled out, judged or permanently defined by a difficult phase.
+      </p>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Make Wellbeing Part of the Normal School Day
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Mental health should not enter the timetable only after a crisis. Small, regular practices can make emotional wellbeing as normal as physical wellbeing. A brief class check-in, quiet reflection after a busy activity or an age-appropriate lesson about handling emotions gives students the language to describe what they feel.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          When the entire class learns about stress, friendship, disappointment, sleep and help-seeking, no one child is marked as ‘the one with a problem’. The message is simple: every person has mental health, and everyone may need support at some point.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Train Adults to Notice, Listen and Refer
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Teachers are often the first adults to observe a change, but they should not be expected to diagnose or provide therapy. Their role is to notice patterns, listen calmly, record concerns appropriately and connect the student with the right support.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Basic staff training can cover warning signs, sensitive language, bullying response, safeguarding and referral procedures. It should also help adults avoid unhelpful phrases such as ‘just be positive’ or ‘others have it worse’. A more helpful response is, ‘I am glad you told me. Let us find the right person to help.’
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Create Safe and Private Ways to Ask for Help
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Not every student is comfortable approaching a counsellor’s room in front of classmates. Schools can offer more than one route: a trusted teacher, a confidential request form, scheduled wellbeing hours or a designated support team. Younger children may need a simple feelings chart or a familiar adult who checks in regularly.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Privacy matters. Conversations should take place discreetly, and information should be shared only with the people who genuinely need it for the child’s safety and care. Students should also understand the limits of confidentiality, particularly when there is a risk of harm.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Use Language That Protects Dignity
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Stigma often grows through everyday words. Describing a child as ‘attention-seeking’, ‘weak’ or ‘difficult’ can close the door to honest conversation. Schools can focus instead on what has been observed: ‘The student has seemed withdrawn this week’ or ‘The student is finding it hard to concentrate.’
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          This shift separates the person from the problem. It reminds adults and peers that a struggle is something a student is experiencing, not the student’s identity.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Build Classrooms Where Mistakes Feel Safe
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Academic pressure and fear of embarrassment can affect wellbeing. Teachers can reduce this pressure by treating mistakes as part of learning, giving clear expectations and avoiding public comparisons. Predictable routines also help students feel secure because they know what will happen next and whom they can approach.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Belonging is equally important. Cooperative work, inclusive activities and a strong response to bullying help every child feel that there is a place for them in the school community.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Work With Parents as Partners
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          A conversation with parents should begin with shared concern, not blame. It is more constructive to describe specific changes and ask what the family has noticed than to present a conclusion. Parents may hold important context about sleep, health, family transitions or earlier support.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Schools can also share reliable resources and referral options when a student needs professional care. If concern is urgent or there is a risk of harm, the school should follow its safeguarding process immediately rather than waiting for the issue to resolve on its own.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Support the Supporters
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          A caring school culture includes staff wellbeing. Teachers who are exhausted or carrying difficult concerns alone may find it harder to respond patiently. Clear roles, access to senior guidance, manageable reporting systems and opportunities to debrief can help staff offer steadier support to students.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Practical Steps Schools Can Begin With
+        </h2>
+        <ul className="space-y-3 text-slate-700 text-lg font-medium leading-relaxed">
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Introduce age-appropriate wellbeing lessons for every class.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Identify trusted adults and explain clearly how students can reach them.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Train staff in early identification, safeguarding and referral.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Create a written anti-bullying and mental health support process.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Offer private, accessible channels for requesting help.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Communicate with families respectfully and without labels.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Build links with qualified mental health professionals for referrals.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Review student feedback to understand whether support feels safe.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          A Culture of Care Benefits Every Learner
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Supporting student mental health does not mean lowering expectations. It means creating the conditions in which children can meet those expectations. A student who feels heard and safe is more able to concentrate, participate, recover from setbacks and build healthy relationships.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          The strongest anti-stigma message is not a poster on a wall. It is what happens when a student quietly asks for help and receives respect, privacy and practical support. When that response becomes part of everyday school life, wellbeing stops being a separate programme and becomes part of education itself.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-8 md:p-12 rounded-[2.5rem] text-white shadow-lg mb-8">
+        <h3 className="text-2xl md:text-3xl font-black mb-4">
+          Nurturing Confident, Capable and Compassionate Young Minds
+        </h3>
+        <p className="text-white/95 text-lg font-medium mb-6 leading-relaxed">
+          At Gayatri English Medium School, Moshi, we believe education should support every aspect of child development. Families in Pune and PCMC are welcome to connect with our admissions team.
+        </p>
+        <Link 
+          to="/admissions" 
+          className="inline-flex items-center gap-2 bg-white text-[#f97316] font-black text-sm uppercase tracking-wider px-8 py-4 rounded-full hover:bg-orange-50 transition shadow-md"
+        >
+          Explore Admissions & Enquire
+        </Link>
+      </div>
+
+      <p className="text-slate-500 text-lg font-medium mt-10">
+        Related Reads:{" "}
+        <Link to="/blog/board-exam-preparation-start-with-stress-management" className="text-[#f97316] font-semibold hover:underline">
+          Why Board Exam Preparation Should Start With Stress Management
+        </Link>{" "}
+        |{" "}
+        <Link to="/blog/mental-health-tips-for-students-during-exams" className="text-[#f97316] font-semibold hover:underline">
+          Mental Health Tips for Students During Exams
+        </Link>{" "}
+        |{" "}
+        <Link to="/blog/best-school-in-pune-for-holistic-development" className="text-[#f97316] font-semibold hover:underline">
+          Best School in Pune for Holistic Development
+        </Link>
+      </p>
+    </div>
+  )
+},
+'board-exam-preparation-start-with-stress-management': {
+  meta: "GEMS Moshi",
+  date: "22 Apr 2026",
+  title: "Why Board Exam Preparation Should Start With Stress Management, Not Just Studying",
+  intro: "A longer study timetable is not always a better one. Students prepare more effectively when calm, sleep and realistic planning come first.",
+  content: (
+    <div className="max-w-4xl mx-auto">
+      <p className="text-slate-600 text-lg md:text-xl font-medium leading-[1.8] text-justify mb-6">
+        As board exams approach, the usual advice becomes louder: study more, solve more papers and do not waste a minute. Practice matters, of course. But a student who is sleeping poorly, constantly worried and unable to concentrate may spend many hours at a desk without learning effectively. That is why a sound board exam plan should begin with stress management, not add it as an afterthought.
+      </p>
+      <p className="text-slate-600 text-lg md:text-xl font-medium leading-[1.8] text-justify mb-10">
+        Stress is not always the enemy. A manageable amount can create energy and urgency. The problem begins when worry becomes so strong that it affects memory, sleep, appetite, confidence or the ability to start. At that point, simply extending study hours often makes the cycle worse.
+      </p>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          A Calm Brain Learns More Efficiently
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Revision requires attention. Students need to understand a question, retrieve information and connect ideas. When the mind is occupied by thoughts such as ‘What if I forget everything?’ or ‘What will people say about my marks?’, part of that attention is pulled away from the task.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Managing stress does not remove the syllabus. It gives the student enough mental space to work through it. A short plan made with a clear head is usually more useful than an ambitious schedule created in panic.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Start With a Realistic Picture, Not Fear
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          The first step is to list subjects and chapters under three simple headings: comfortable, needs revision and needs help. This makes the workload visible and specific. ‘I have too much to study’ becomes ‘I need to revise algebra and ask for help with two chapters in science.’ Specific problems are easier to solve.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Students should build the timetable around priorities, available days and their own concentration span. There is no prize for copying someone else’s twelve-hour routine. Consistency matters more than an impressive plan that lasts only two days.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Use Focused Blocks and Proper Breaks
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          A useful study block has one clear goal, such as revising a concept and solving five related questions. After the block, a short break allows the mind to reset. The exact timing can vary; some students focus well for 25 minutes, while others prefer 45 or 50 minutes.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Breaks should genuinely refresh the student. Stretching, drinking water, walking on the terrace or speaking briefly with family is usually more restorative than switching to endless short videos.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Sleep Is Part of Preparation
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Late-night study can feel productive because it adds visible hours. Yet regular sleep supports attention, mood and recall the next day. Students should aim for a steady bedtime, especially in the weeks before exams, rather than suddenly changing their routine on the night before a paper.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          A rested student is also less likely to turn one difficult question into a prediction of failure. Emotional balance is easier to maintain when the body is not exhausted.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Practise Under Exam Conditions, Gradually
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Sample papers are valuable, but students do not need to begin with a full timed paper if that feels overwhelming. They can start with one section, review the errors and then increase the duration. The purpose is to make the exam format familiar, not to repeatedly prove that the student is not ready.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          After each practice paper, divide mistakes into categories: concept gap, careless error, misunderstood question or time-management issue. Each category needs a different response. This turns a disappointing score into practical information.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Replace Result Talk With Process Talk
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Constant questions about expected percentages can raise pressure without improving preparation. Parents and teachers can ask about the process instead: What did you complete today? Which topic needs clarification? What is the plan for tomorrow?
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Encouragement should remain believable. Rather than saying ‘You will definitely top’, try ‘Keep following your plan, and ask for help when you need it.’ This supports confidence without making the child feel responsible for fulfilling someone else’s prediction.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          A Simple Routine for Difficult Moments
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          When anxiety rises, students can pause and use a brief reset: place both feet on the floor, take slow breaths, notice a few things in the room and choose one small next action. That action might be reading a single page or solving one familiar question. Beginning reduces the power of avoidance.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          If stress is persistent, causes panic, prevents sleep, leads to frequent physical complaints or includes thoughts of self-harm, it needs adult attention. The student should speak with a parent, teacher, school counsellor or qualified mental health professional. Asking for help is a responsible step, not a sign of weakness.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Board Exam Preparation Checklist
+        </h2>
+        <ul className="space-y-3 text-slate-700 text-lg font-medium leading-relaxed">
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Make a chapter-wise priority list and update it each week.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Set one clear goal for every study session.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Include short breaks, movement and regular meals.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Protect a consistent sleep routine.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Practise sample papers and analyse the type of each error.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Keep phones and notifications away during focused study.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Ask teachers about doubts early instead of carrying them forward.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Plan a light revision day before each exam rather than an all-night session.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Preparation Is Not Measured by Panic
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Board exams are important, but they are not helped by treating every day as an emergency. A student who can manage stress is better able to follow a timetable, remember what has been learned and recover when a paper feels difficult.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          The best preparation plan is not simply the one with the most hours. It is the one a student can follow with focus, honesty and enough rest. When wellbeing comes first, studying becomes more effective, and exam confidence grows from real preparation rather than last-minute pressure.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-8 md:p-12 rounded-[2.5rem] text-white shadow-lg mb-8">
+        <h3 className="text-2xl md:text-3xl font-black mb-4">
+          Holistic Academic Support for Board Exam Success
+        </h3>
+        <p className="text-white/95 text-lg font-medium mb-6 leading-relaxed">
+          Gayatri English Medium School, Moshi, encourages families to view academic progress as part of a child’s overall growth. Learn more about our CBSE learning environment in Pune-PCMC.
+        </p>
+        <Link 
+          to="/admissions" 
+          className="inline-flex items-center gap-2 bg-white text-[#f97316] font-black text-sm uppercase tracking-wider px-8 py-4 rounded-full hover:bg-orange-50 transition shadow-md"
+        >
+          Explore Admissions & Enquire
+        </Link>
+      </div>
+
+      <p className="text-slate-500 text-lg font-medium mt-10">
+        Related Reads:{" "}
+        <Link to="/blog/cbse-board-exam-tips-2026" className="text-[#f97316] font-semibold hover:underline">
+          CBSE Board Exam Tips 2026
+        </Link>{" "}
+        |{" "}
+        <Link to="/blog/how-parents-can-support-children-during-exams" className="text-[#f97316] font-semibold hover:underline">
+          How Parents Can Support Children During Exams
+        </Link>{" "}
+        |{" "}
+        <Link to="/blog/schools-support-student-mental-health-without-stigma" className="text-[#f97316] font-semibold hover:underline">
+          How Schools Can Support Student Mental Health Without Stigma
+        </Link>
+      </p>
+    </div>
+  )
+},
+'parent-school-collaboration-student-success': {
+  meta: "GEMS Moshi",
+  date: "21 Apr 2026",
+  title: "Why Parent-School Collaboration Is the New Formula for Student Success",
+  intro: "Students make stronger progress when home and school share information, expectations and responsibility instead of working in separate worlds.",
+  content: (
+    <div className="max-w-4xl mx-auto">
+      <p className="text-slate-600 text-lg md:text-xl font-medium leading-[1.8] text-justify mb-6">
+        A child does not stop being a student at the school gate, and does not leave family experiences at home when entering the classroom. Learning moves between both worlds every day. When parents and schools communicate only during admissions, report cards or a problem, they miss valuable opportunities to understand the whole child.
+      </p>
+      <p className="text-slate-600 text-lg md:text-xl font-medium leading-[1.8] text-justify mb-10">
+        Parent-school collaboration offers a better approach. It is not about parents managing the classroom or teachers directing family life. It is a partnership in which each side brings different knowledge, agrees on shared goals and keeps the student at the centre.
+      </p>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Parents and Teachers See Different Parts of the Picture
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Teachers observe how a student participates in groups, responds to instruction, manages deadlines and approaches unfamiliar tasks. Parents see routines, interests, sleep patterns, family changes and the way the child talks about school at home. Neither view is complete on its own.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          A child who seems distracted in class may be sleeping poorly. A student who avoids homework may be confused about a concept rather than unwilling to work. When information is shared early and respectfully, adults can respond to the real need instead of making assumptions.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Consistency Gives Children Confidence
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Students feel secure when important expectations are reasonably consistent. If school encourages regular reading, parents can support a simple reading routine at home. If a family is working on punctuality or screen habits, the teacher can reinforce planning and responsibility in an age-appropriate way.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Consistency does not mean identical rules in every setting. It means that adults are not sending completely opposite messages about effort, respect, honesty and responsibility.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Early Conversations Prevent Bigger Problems
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          A short message about a change in participation can be more useful than waiting until an examination result reveals a serious gap. In the same way, parents should feel comfortable sharing information that may affect learning, such as illness, bereavement, a house move or a change in routine.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Early communication allows support to begin while the concern is still manageable. It also stops parent-teacher meetings from becoming tense events where both sides arrive with a long list of surprises.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Good Collaboration Is Two-Way
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Sending circulars and reminders is communication, but collaboration requires listening as well. Schools can explain learning goals and classroom expectations, while also giving families meaningful opportunities to ask questions and share observations.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Parents do not need to contact teachers daily. A clear system is more valuable than constant messages: scheduled meetings, appropriate digital channels, realistic response times and a known point of contact. Boundaries protect teachers’ time and help parents know when and how they will receive an answer.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Meetings Should Focus on Solutions, Not Blame
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          A productive conversation begins with specific observations. ‘Three assignments were incomplete this month’ is more useful than ‘Your child is careless.’ ‘We are finding it difficult to begin homework without conflict’ gives the school something concrete to explore.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          Both sides can then agree on a small plan: one target, who will support it, and when progress will be reviewed. Clear next steps are easier for a child to follow than several adults giving different instructions.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Students Need a Voice in the Partnership
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Collaboration should not become a conversation about the child that never includes the child. As students grow older, they can help set goals, explain what support works and reflect on progress. A Class 8 student, for example, can take part in planning a homework routine or identifying the subject in which extra clarification is needed.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          This involvement builds ownership. It also prevents the student from feeling that parents and teachers have formed an alliance simply to monitor them.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Partnership Is About More Than Marks
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Academic performance matters, but families and schools also shape communication, resilience, kindness, curiosity and self-discipline. A child may need support in making friends, speaking confidently, handling disappointment or balancing activities.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          These aspects of development are easier to nurture when adults exchange observations and celebrate progress beyond test scores.
+        </p>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Simple Ways Parents and Schools Can Work Together
+        </h2>
+        <ul className="space-y-3 text-slate-700 text-lg font-medium leading-relaxed">
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Share relevant information early, before a concern becomes a crisis.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Use agreed communication channels and respect response-time boundaries.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Begin meetings with strengths as well as areas for improvement.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Discuss specific behaviour or work, not labels about the child.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Agree on one or two practical actions and a review date.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Encourage age-appropriate student participation in goal-setting.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Keep home support focused on routine and encouragement, not doing the work.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#f97316] font-black text-xl leading-none mt-1">•</span>
+            <span>Celebrate effort, improvement, attendance, creativity and responsible choices.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+          Trust Is Built in Ordinary Moments
+        </h2>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Strong partnerships are not created by one annual meeting. They grow through timely updates, respectful questions, honest feedback and the willingness to assume good intent. There will sometimes be disagreement. What matters is returning to the shared question: what will help this student learn and grow?
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+          Parent-school collaboration is becoming the new formula for success because education is too complex for either side to handle alone. When families and educators combine their insight, children receive clearer guidance and a stronger sense that the important adults in their lives are working with them, not around them.
+        </p>
+        <p className="text-slate-600 text-lg font-medium leading-relaxed">
+          At Gayatri English Medium School, Moshi, we value open communication and the shared role of families and educators in a child’s journey. Parents seeking a CBSE school in Pune-PCMC can contact us to explore our school community and admission process.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-8 md:p-12 rounded-[2.5rem] text-white shadow-lg mb-8">
+        <h3 className="text-2xl md:text-3xl font-black mb-4">
+          Partnering with Families for Every Child's Future
+        </h3>
+        <p className="text-white/95 text-lg font-medium mb-6 leading-relaxed">
+          Gayatri English Medium School, Moshi, Pune welcomes parents seeking a supportive, forward-thinking CBSE school community.
+        </p>
+        <Link 
+          to="/admissions" 
+          className="inline-flex items-center gap-2 bg-white text-[#f97316] font-black text-sm uppercase tracking-wider px-8 py-4 rounded-full hover:bg-orange-50 transition shadow-md"
+        >
+          Explore Admissions & Enquire
+        </Link>
+      </div>
+
+      <p className="text-slate-500 text-lg font-medium mt-10">
+        Related Reads:{" "}
+        <Link to="/blog/how-parents-can-support-children-during-exams" className="text-[#f97316] font-semibold hover:underline">
+          How Parents Can Support Children During Exams
+        </Link>{" "}
+        |{" "}
+        <Link to="/blog/best-cbse-school-in-moshi-academic-excellence" className="text-[#f97316] font-semibold hover:underline">
+          Academic Excellence at GEMS Moshi
+        </Link>{" "}
+        |{" "}
+        <Link to="/blog/schools-support-student-mental-health-without-stigma" className="text-[#f97316] font-semibold hover:underline">
+          How Schools Can Support Student Mental Health
+        </Link>
+      </p>
+    </div>
+  )
+},
+
 'best-cbse-school-in-moshi-academic-excellence': {
   meta: "GEMS Moshi",
   date: "20 Apr 2026",
