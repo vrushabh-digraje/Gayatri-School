@@ -16,126 +16,16 @@ const Events: React.FC = () => {
   const events: SchoolEvent[] = [
     {
       id: 1,
-      title: "Dandiya Celebration",
-      date: "Oct 16, 2026",
-      time: "School Hours / Celebrated",
-      location: "School Campus Ground",
+      title: "Maharashtra Day Celebration",
+      date: "May 01, 2026",
+      time: "9:00 AM - 12:00 PM",
+      location: "School Auditorium",
       category: "Cultural",
-      description: "A vibrant festive celebration featuring traditional folk dance, music, ethnic attire, and cultural bonding among students and teachers.",
-      image: "/cultural.JPG"
+      description: "Celebrating Maharashtra Day with patriotic performances, speeches, and cultural activities by students.",
+      image: "/MaharashtraD2026.webp"
     },
     {
       id: 2,
-      title: "Diya Decoration & Bagless Day",
-      date: "Oct 21 - 30, 2026",
-      time: "During School Hours",
-      location: "School Art Rooms & Quadrangle",
-      category: "Cultural",
-      description: "Diwali creative preparations including diya colouring, eco-friendly handicrafts, and a student-managed diya exhibition and sale.",
-      image: "/Exi2.jpg"
-    },
-    {
-      id: 3,
-      title: "Children's Day & Quiz Competition",
-      date: "Nov 14 - 18, 2026",
-      time: "During School Hours",
-      location: "School Auditorium",
-      category: "Academic",
-      description: "Special celebratory assembly, historical character role-play (Classes 1–4), and an inter-house general knowledge quiz (Classes 6–9).",
-      image: "/sa1.JPG"
-    },
-    {
-      id: 4,
-      title: "Constitution Day",
-      date: "Nov 26, 2026",
-      time: "During School Hours",
-      location: "School Auditorium",
-      category: "Academic",
-      description: "Commemoration of Samvidhan Divas with collective preamble reading, civic awareness sessions, and student speeches on democratic values.",
-      image: "/ConstitutionDay2026.png"
-    },
-    {
-      id: 5,
-      title: "Annual Sports Day",
-      date: "Nov 28, 2026",
-      time: "Sports Day Schedule",
-      location: "School Sports Ground",
-      category: "Sports",
-      description: "The premier athletic meet of the year featuring torch lighting, march past, sprint races, relays, team championships, and medal awards.",
-      image: "/SportsDay.jpg"
-    },
-    {
-      id: 6,
-      title: "Inter-House Debate Competition",
-      date: "Dec 12, 2026",
-      time: "During School Hours",
-      location: "School Auditorium",
-      category: "Academic",
-      description: "Competitive debate championship for Classes 6 to 10 encouraging articulate arguments, critical thinking, and public speaking confidence.",
-      image: "/Lib.jpg"
-    },
-    {
-      id: 7,
-      title: "Annual Day Celebration",
-      date: "Dec 24, 2026",
-      time: "As Per Event Schedule",
-      location: "Main Open Air Theatre & Stage",
-      category: "Cultural",
-      description: "The grandest cultural milestone of the school year showcasing theatrical plays, classical and fusion dances, musical choir, and annual prize distribution.",
-      image: "/AnnualDay.JPG"
-    },
-    {
-      id: 8,
-      title: "Swami Vivekananda Jayanti & Kite Activity",
-      date: "Jan 09 - 12, 2027",
-      time: "During School Hours",
-      location: "School Campus",
-      category: "Cultural",
-      description: "Observance of National Youth Day and Rajmata Jijau Jayanti paired with a hands-on kite making activity on Bagless Day.",
-      image: "/sa.JPG"
-    },
-    {
-      id: 9,
-      title: "Science & Robotics Exhibition",
-      date: "Feb 13, 2027",
-      time: "During School Hours",
-      location: "Robotics Lab & Quadrangle",
-      category: "Exhibition",
-      description: "Interactive showcase where students demonstrate working science models, IoT prototypes, robotics kits, and innovative technological solutions.",
-      image: "/RoboticsLab1.JPG"
-    },
-    {
-      id: 10,
-      title: "Marathi Divas & National Science Day",
-      date: "Feb 27 - 28, 2027",
-      time: "During School Hours",
-      location: "Science Labs & Auditorium",
-      category: "Academic",
-      description: "Tribute to Marathi language literature and heritage followed by National Science Day research experiments and live demonstrations.",
-      image: "/Pract1.jpg"
-    },
-    {
-      id: 11,
-      title: "Gandhi Jayanti",
-      date: "Oct 02, 2026",
-      time: "9:00 AM - 12:00 PM",
-      location: "School Campus",
-      category: "Cultural",
-      description: "Remembering Mahatma Gandhi through activities promoting peace and cleanliness.",
-      image: "/GandhiJayanti2026.png"
-    },
-    {
-      id: 12,
-      title: "Teachers' Day",
-      date: "Sep 05, 2026",
-      time: "9:00 AM - 12:00 PM",
-      location: "School Auditorium",
-      category: "Cultural",
-      description: "Honoring teachers with performances and appreciation programs by students.",
-      image: "/TeachersDay2026.png"
-    },
-    {
-      id: 13,
       title: "Independence Day Celebration",
       date: "Aug 15, 2026",
       time: "7:00 AM - 10:00 AM",
@@ -145,14 +35,124 @@ const Events: React.FC = () => {
       image: "/IndependenceDay2026.png"
     },
     {
-      id: 14,
-      title: "Maharashtra Day Celebration",
-      date: "May 01, 2026",
+      id: 3,
+      title: "Teachers' Day",
+      date: "Sep 05, 2026",
       time: "9:00 AM - 12:00 PM",
       location: "School Auditorium",
       category: "Cultural",
-      description: "Celebrating Maharashtra Day with patriotic performances, speeches, and cultural activities by students.",
-      image: "/MaharashtraD2026.webp"
+      description: "Honoring teachers with performances and appreciation programs by students.",
+      image: "/TeachersDay2026.png"
+    },
+    {
+      id: 4,
+      title: "Gandhi Jayanti",
+      date: "Oct 02, 2026",
+      time: "9:00 AM - 12:00 PM",
+      location: "School Campus",
+      category: "Cultural",
+      description: "Remembering Mahatma Gandhi through activities promoting peace and cleanliness.",
+      image: "/GandhiJayanti2026.png"
+    },
+    {
+      id: 5,
+      title: "Dandiya Celebration",
+      date: "Oct 16, 2026",
+      time: "School Hours / Celebrated",
+      location: "School Campus Ground",
+      category: "Cultural",
+      description: "A vibrant festive celebration featuring traditional folk dance, music, ethnic attire, and cultural bonding among students and teachers.",
+      image: "/cultural.JPG"
+    },
+    {
+      id: 6,
+      title: "Diya Decoration & Bagless Day",
+      date: "Oct 21 - 30, 2026",
+      time: "During School Hours",
+      location: "School Art Rooms & Quadrangle",
+      category: "Cultural",
+      description: "Diwali creative preparations including diya colouring, eco-friendly handicrafts, and a student-managed diya exhibition and sale.",
+      image: "/Exi2.jpg"
+    },
+    {
+      id: 7,
+      title: "Children's Day & Quiz Competition",
+      date: "Nov 14 - 18, 2026",
+      time: "During School Hours",
+      location: "School Auditorium",
+      category: "Academic",
+      description: "Special celebratory assembly, historical character role-play (Classes 1–4), and an inter-house general knowledge quiz (Classes 6–9).",
+      image: "/sa1.JPG"
+    },
+    {
+      id: 8,
+      title: "Constitution Day",
+      date: "Nov 26, 2026",
+      time: "During School Hours",
+      location: "School Auditorium",
+      category: "Academic",
+      description: "Commemoration of Samvidhan Divas with collective preamble reading, civic awareness sessions, and student speeches on democratic values.",
+      image: "/ConstitutionDay2026.png"
+    },
+    {
+      id: 9,
+      title: "Annual Sports Day",
+      date: "Nov 28, 2026",
+      time: "Sports Day Schedule",
+      location: "School Sports Ground",
+      category: "Sports",
+      description: "The premier athletic meet of the year featuring torch lighting, march past, sprint races, relays, team championships, and medal awards.",
+      image: "/SportsDay.jpg"
+    },
+    {
+      id: 10,
+      title: "Inter-House Debate Competition",
+      date: "Dec 12, 2026",
+      time: "During School Hours",
+      location: "School Auditorium",
+      category: "Academic",
+      description: "Competitive debate championship for Classes 6 to 10 encouraging articulate arguments, critical thinking, and public speaking confidence.",
+      image: "/Lib.jpg"
+    },
+    {
+      id: 11,
+      title: "Annual Day Celebration",
+      date: "Dec 24, 2026",
+      time: "As Per Event Schedule",
+      location: "Main Open Air Theatre & Stage",
+      category: "Cultural",
+      description: "The grandest cultural milestone of the school year showcasing theatrical plays, classical and fusion dances, musical choir, and annual prize distribution.",
+      image: "/AnnualDay.JPG"
+    },
+    {
+      id: 12,
+      title: "Swami Vivekananda Jayanti & Kite Activity",
+      date: "Jan 09 - 12, 2027",
+      time: "During School Hours",
+      location: "School Campus",
+      category: "Cultural",
+      description: "Observance of National Youth Day and Rajmata Jijau Jayanti paired with a hands-on kite making activity on Bagless Day.",
+      image: "/sa.JPG"
+    },
+    {
+      id: 13,
+      title: "Science & Robotics Exhibition",
+      date: "Feb 13, 2027",
+      time: "During School Hours",
+      location: "Robotics Lab & Quadrangle",
+      category: "Exhibition",
+      description: "Interactive showcase where students demonstrate working science models, IoT prototypes, robotics kits, and innovative technological solutions.",
+      image: "/RoboticsLab1.JPG"
+    },
+    {
+      id: 14,
+      title: "Marathi Divas & National Science Day",
+      date: "Feb 27 - 28, 2027",
+      time: "During School Hours",
+      location: "Science Labs & Auditorium",
+      category: "Academic",
+      description: "Tribute to Marathi language literature and heritage followed by National Science Day research experiments and live demonstrations.",
+      image: "/Pract1.jpg"
     }
   ];
 
