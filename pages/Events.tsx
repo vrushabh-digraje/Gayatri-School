@@ -106,6 +106,16 @@ const Events: React.FC = () => {
     },
     {
       id: 10,
+      title: "Dr. Babasaheb Ambedkar Mahaparinirvan Diwas",
+      date: "Dec 06, 2026",
+      time: "During School Hours",
+      location: "School Auditorium",
+      category: "Academic",
+      description: "Observing Mahaparinirvan Diwas with floral tributes, commemorative speeches, and honoring Dr. B. R. Ambedkar's monumental contributions to equality and the Constitution.",
+      image: "/ConstitutionDay2026.png"
+    },
+    {
+      id: 11,
       title: "Inter-House Debate Competition",
       date: "Dec 12, 2026",
       time: "During School Hours",
@@ -115,7 +125,7 @@ const Events: React.FC = () => {
       image: "/Lib.jpg"
     },
     {
-      id: 11,
+      id: 12,
       title: "Christmas Celebration",
       date: "Dec 23, 2026",
       time: "During School Hours",
@@ -125,7 +135,7 @@ const Events: React.FC = () => {
       image: "/cultural.JPG"
     },
     {
-      id: 12,
+      id: 13,
       title: "Annual Day Celebration",
       date: "Dec 24, 2026",
       time: "As Per Event Schedule",
@@ -135,7 +145,7 @@ const Events: React.FC = () => {
       image: "/AnnualDay.JPG"
     },
     {
-      id: 13,
+      id: 14,
       title: "Swami Vivekananda Jayanti & Kite Activity",
       date: "Jan 09 - 12, 2027",
       time: "During School Hours",
@@ -145,7 +155,7 @@ const Events: React.FC = () => {
       image: "/sa.JPG"
     },
     {
-      id: 14,
+      id: 15,
       title: "Republic Day & Art Exhibition (3 Days)",
       date: "Jan 25 - 27, 2027",
       time: "9:00 AM - 1:00 PM",
@@ -155,7 +165,7 @@ const Events: React.FC = () => {
       image: "/Exi.jpg"
     },
     {
-      id: 15,
+      id: 16,
       title: "Science & Robotics Exhibition",
       date: "Feb 13, 2027",
       time: "During School Hours",
@@ -165,7 +175,7 @@ const Events: React.FC = () => {
       image: "/RoboticsLab1.JPG"
     },
     {
-      id: 16,
+      id: 17,
       title: "Chhatrapati Shivaji Maharaj Jayanti",
       date: "Feb 19, 2027",
       time: "During School Hours",
@@ -175,7 +185,7 @@ const Events: React.FC = () => {
       image: "/sa.JPG"
     },
     {
-      id: 17,
+      id: 18,
       title: "Marathi Divas & National Science Day",
       date: "Feb 27 - 28, 2027",
       time: "During School Hours",
@@ -185,7 +195,7 @@ const Events: React.FC = () => {
       image: "/Pract1.jpg"
     },
     {
-      id: 18,
+      id: 19,
       title: "International Women’s Day",
       date: "Mar 08, 2027",
       time: "During School Hours",
