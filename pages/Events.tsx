@@ -56,6 +56,16 @@ const Events: React.FC = () => {
     },
     {
       id: 5,
+      title: "Lal Bahadur Shastri Jayanti",
+      date: "Oct 02, 2026",
+      time: "During School Hours",
+      location: "School Auditorium",
+      category: "Academic",
+      description: "Commemorating the birth anniversary of Bharat Ratna Lal Bahadur Shastri, reflecting on his inspiring slogan 'Jai Jawan, Jai Kisan', simplicity, and patriotic leadership.",
+      image: "/LalBahadurShastriJayanti.png"
+    },
+    {
+      id: 6,
       title: "Dandiya Celebration",
       date: "Oct 16, 2026",
       time: "School Hours / Celebrated",
@@ -65,7 +75,7 @@ const Events: React.FC = () => {
       image: "/DandiyaCelebration.png"
     },
     {
-      id: 6,
+      id: 7,
       title: "Diya Decoration & Bagless Day",
       date: "Oct 21 - 30, 2026",
       time: "During School Hours",
@@ -75,7 +85,7 @@ const Events: React.FC = () => {
       image: "/DiyaDecoration.png"
     },
     {
-      id: 7,
+      id: 8,
       title: "Children's Day & Quiz Competition",
       date: "Nov 14 - 18, 2026",
       time: "During School Hours",
@@ -85,7 +95,7 @@ const Events: React.FC = () => {
       image: "/ChildrensDayQuiz.png"
     },
     {
-      id: 8,
+      id: 9,
       title: "Constitution Day",
       date: "Nov 26, 2026",
       time: "During School Hours",
@@ -95,7 +105,7 @@ const Events: React.FC = () => {
       image: "/ConstitutionDay2026.png"
     },
     {
-      id: 9,
+      id: 10,
       title: "Annual Sports Day",
       date: "Nov 28, 2026",
       time: "Sports Day Schedule",
@@ -105,7 +115,7 @@ const Events: React.FC = () => {
       image: "/Sports2.jpg"
     },
     {
-      id: 10,
+      id: 11,
       title: "Dr. Babasaheb Ambedkar Mahaparinirvan Diwas",
       date: "Dec 06, 2026",
       time: "During School Hours",
@@ -115,7 +125,7 @@ const Events: React.FC = () => {
       image: "/AmbedkarDiwas.png"
     },
     {
-      id: 11,
+      id: 12,
       title: "Inter-House Debate Competition",
       date: "Dec 12, 2026",
       time: "During School Hours",
@@ -125,7 +135,7 @@ const Events: React.FC = () => {
       image: "/DebateCompetition.png"
     },
     {
-      id: 12,
+      id: 13,
       title: "Christmas Celebration",
       date: "Dec 23, 2026",
       time: "During School Hours",
@@ -135,7 +145,7 @@ const Events: React.FC = () => {
       image: "/ChristmasCelebration.png"
     },
     {
-      id: 13,
+      id: 14,
       title: "Annual Day Celebration",
       date: "Dec 24, 2026",
       time: "As Per Event Schedule",
@@ -145,7 +155,7 @@ const Events: React.FC = () => {
       image: "/AnnualDay.JPG"
     },
     {
-      id: 14,
+      id: 15,
       title: "Swami Vivekananda Jayanti & Kite Activity",
       date: "Jan 09 - 12, 2027",
       time: "During School Hours",
@@ -155,7 +165,7 @@ const Events: React.FC = () => {
       image: "/KiteActivity.png"
     },
     {
-      id: 15,
+      id: 16,
       title: "Republic Day & Art Exhibition (3 Days)",
       date: "Jan 25 - 27, 2027",
       time: "9:00 AM - 1:00 PM",
@@ -165,7 +175,7 @@ const Events: React.FC = () => {
       image: "/Exi2.jpg"
     },
     {
-      id: 16,
+      id: 17,
       title: "Science & Robotics Exhibition",
       date: "Feb 13, 2027",
       time: "During School Hours",
@@ -175,7 +185,7 @@ const Events: React.FC = () => {
       image: "/RoboticsLab1.JPG"
     },
     {
-      id: 17,
+      id: 18,
       title: "Chhatrapati Shivaji Maharaj Jayanti",
       date: "Feb 19, 2027",
       time: "During School Hours",
@@ -185,7 +195,7 @@ const Events: React.FC = () => {
       image: "/ShivajiJayanti.png"
     },
     {
-      id: 18,
+      id: 19,
       title: "Marathi Divas & National Science Day",
       date: "Feb 27 - 28, 2027",
       time: "During School Hours",
@@ -195,7 +205,7 @@ const Events: React.FC = () => {
       image: "/Pract1.jpg"
     },
     {
-      id: 19,
+      id: 20,
       title: "International Women’s Day",
       date: "Mar 08, 2027",
       time: "During School Hours",
