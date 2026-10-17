@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as ReactRouterDOM from 'react-router-dom';
 const { Link } = ReactRouterDOM as any;
-import { ArrowRight, GraduationCap, Award, MonitorPlay, Users, BookMarked, CheckCircle2, Calendar, MapPin, Sparkles, Clock } from 'lucide-react';
+import { ArrowRight, GraduationCap, Award, MonitorPlay, Users, BookMarked, CheckCircle2 } from 'lucide-react';
 import { FACILITIES } from '../constants';
 import { motion, AnimatePresence } from 'framer-motion';
 import ContactFormModal from '../components/ContactFormModal';
@@ -76,46 +76,10 @@ const LEADERS_IMAGES = [
   "/BhongaleSir6.jpeg"
 ];
 
-const UPCOMING_HOME_EVENTS = [
-  {
-    title: "Diya Decoration & Bagless Day",
-    date: "Oct 21 - 30, 2026",
-    time: "During School Hours",
-    category: "Cultural & Art",
-    description: "Diwali creative preparations including diya colouring, eco-friendly handicrafts, and student-managed festive exhibition.",
-    image: "/Exi2.jpg"
-  },
-  {
-    title: "Children's Day & Quiz Competition",
-    date: "Nov 14 - 18, 2026",
-    time: "During School Hours",
-    category: "Academic",
-    description: "Special celebratory assembly, historical character role-play, and an inter-house general knowledge quiz.",
-    image: "/sa1.JPG"
-  },
-  {
-    title: "Indian Constitution Day",
-    date: "Nov 26, 2026",
-    time: "During School Hours",
-    category: "Civic Awareness",
-    description: "Commemoration of Samvidhan Divas with collective preamble reading, civic awareness sessions, and student speeches.",
-    image: "/ConstitutionDay2026.png"
-  },
-  {
-    title: "Annual Sports Day",
-    date: "Nov 28, 2026",
-    time: "Sports Day Schedule",
-    category: "Sports Meet",
-    description: "The premier athletic meet of the year featuring torch lighting, march past, sprint races, relays, and medal awards.",
-    image: "/SportsDay.jpg"
-  }
-];
-
 const Home: React.FC = () => {
   const leadersSection = useScrollReveal();
   const statsSection = useScrollReveal();
   const journeySection = useScrollReveal();
-  const eventsSection = useScrollReveal();
   const facilitiesSection = useScrollReveal();
   const [phoneNumber, setPhoneNumber] = useState('');
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -364,148 +328,102 @@ const Home: React.FC = () => {
       />
     </div>
   </div>
+
 </div>
-      </section>
-
-      {/* Upcoming Events Section - Academic Calendar 2026-27 */}
-      <section ref={eventsSection.ref} className="py-20 bg-white relative">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-orange-50 text-[#f97316] rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-3 border border-orange-100">
-                <Sparkles size={12} /> Academic Calendar 2026–27
+ </section>
+            <div className="max-w-xl mx-auto mb-8">
+              <div className="bg-white p-1 rounded-full flex items-center shadow-xl border border-white/50">
+                {/* <input 
+                  type="text" 
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  placeholder="Enter Your Number" 
+                  className="flex-grow px-5 py-2.5 bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none font-bold text-sm"
+                /> */}
+                {/* <button 
+                  onClick={handleCallRequest}
+                  className="bg-[#1e3a8a] hover:bg-[#1a337a] text-white px-5 py-3 rounded-full font-black text-[9px] uppercase tracking-[0.1em] flex items-center gap-2 transition-all shadow-md"
+                >
+                  Request Call Back <ArrowRight size={14} />
+                </button> */}
               </div>
-              <h2 className="text-3xl md:text-5xl font-black text-[#1e3a8a] tracking-tight font-serif">
-                Upcoming School Events
-              </h2>
-              <p className="text-slate-500 text-sm md:text-base font-medium mt-2 max-w-xl">
-                Discover upcoming celebrations, academic competitions, and sports championships scheduled for our students.
-              </p>
             </div>
 
-            <Link
-              to="/media/events"
-              className="inline-flex items-center gap-2 bg-[#1e3a8a] text-white px-6 py-3.5 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-[#152a65] transition-all shadow-md group shrink-0"
-            >
-              View All Events
-              <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {UPCOMING_HOME_EVENTS.map((event, idx) => (
-              <div
-                key={idx}
-                className={`bg-[#fff9f2] rounded-3xl overflow-hidden border border-orange-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group hover:-translate-y-1.5 ${
-                  eventsSection.isVisible ? 'animate-fade-in-up' : 'opacity-0'
-                }`}
-                style={{ transitionDelay: `${idx * 100}ms` }}
-              >
-                <div className="relative h-48 overflow-hidden bg-slate-100">
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = '/School1.jpg';
-                    }}
-                  />
-                  <div className="absolute top-3 left-3 flex flex-col gap-1.5">
-                    <span className="bg-white/95 backdrop-blur-sm text-[#1e3a8a] px-3 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider shadow-sm border border-slate-100">
-                      {event.category}
-                    </span>
-                  </div>
+            <div className="grid grid-cols-2 max-w-md mx-auto border-t border-white/20 pt-8">
+              <div className="text-center px-4 relative">
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-px h-10 bg-white/20"></div>
+                <div className="text-3xl font-black text-white mb-1">
+                  <AnimatedCounter end={100} isVisible={journeySection.isVisible} suffix="+" />
                 </div>
-
-                <div className="p-5 flex-1 flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center gap-2 text-[#f97316] mb-2 font-black text-xs uppercase tracking-wider">
-                      <Calendar size={14} />
-                      <span>{event.date}</span>
-                    </div>
-                    <h3 className="text-lg font-black text-slate-900 group-hover:text-[#f97316] transition-colors leading-snug mb-2 font-serif">
-                      {event.title}
-                    </h3>
-                    <p className="text-slate-600 text-xs font-medium leading-relaxed mb-4 line-clamp-3">
-                      {event.description}
-                    </p>
-                  </div>
-
-                  <div className="pt-3 border-t border-orange-200/60 flex items-center justify-between text-[11px] font-bold text-slate-500">
-                    <div className="flex items-center gap-1.5">
-                      <Clock size={13} className="text-[#f97316]" />
-                      <span>{event.time}</span>
-                    </div>
-                    <Link
-                      to="/media/events"
-                      className="text-[#1e3a8a] font-black hover:text-[#f97316] transition-colors flex items-center gap-1"
-                    >
-                      Details &rarr;
-                    </Link>
-                  </div>
-                </div>
+                <p className="text-orange-50 font-black uppercase tracking-widest text-[8px]">Results Legacies</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* World Class Facilities Section - THEME UPDATED TO LIGHT ORANGE/NAVY */}
-      <section ref={facilitiesSection.ref} className="py-16 bg-[#fff9f2]">
-        <div className="max-w-7xl mx-auto px-8">
-
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
-            <div>
-              <span className="text-[#f97316] font-black uppercase tracking-[0.2em] text-[10px] mb-2 block">
-                Campus Life
-              </span>
-              <h2 className="text-4xl font-black text-[#1e3a8a] tracking-tight">
-                World Class Facilities
-              </h2>
+              <div className="text-center px-4">
+                <div className="text-3xl font-black text-white mb-1">
+                  <AnimatedCounter end={2000} isVisible={journeySection.isVisible} suffix="+" />
+                </div>
+                <p className="text-orange-50 font-black uppercase tracking-widest text-[8px]">Students Transforming Lives</p>
+              </div>
             </div>
-
-            <Link
-              to="/gallery"
-              className="text-slate-400 font-black uppercase tracking-widest text-[10px] hover:text-[#f97316] transition-colors flex items-center"
-            >
-              Explore Full Gallery
-              <ArrowRight size={14} className="transition-transform group-hover/link:translate-x-1" />
-            </Link>
           </div>
+         
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {FACILITIES.map((f, i) => (
-              <div
-                key={i}
-                className="group relative overflow-hidden rounded-[2.5rem] aspect-[4/5] shadow-xl border border-orange-50"
-              >
-                <img
-                  src={f.image}
-                  alt={f.title}
-                  className="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110"
-                />
+);
+      
+          {/* World Class Facilities Section - THEME UPDATED TO LIGHT ORANGE/NAVY */}
+<section ref={facilitiesSection.ref} className="py-16 bg-[#fff9f2]">
+  <div className="max-w-7xl mx-auto px-8">
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a8a]/95 via-[#1e3a8a]/40 to-transparent flex flex-col justify-end p-6">
-                  <div className="bg-orange-100/20 backdrop-blur-md w-14 h-14 rounded-2xl flex items-center justify-center text-white mb-6">
-                    {f.icon}
-                  </div>
+    <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
+      <div>
+        <span className="text-[#f97316] font-black uppercase tracking-[0.2em] text-[10px] mb-2 block">
+          Campus Life
+        </span>
+        <h2 className="text-4xl font-black text-[#1e3a8a] tracking-tight">
+          World Class Facilities
+        </h2>
+      </div>
 
-                  <h3 className="text-2xl font-black text-white mb-3 tracking-tight">
-                    {f.title}
-                  </h3>
-
-                  <p className="text-orange-100/80 text-sm font-medium">
-                    {f.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
+      <Link
+        to="/gallery"
+        className="text-slate-400 font-black uppercase tracking-widest text-[10px] hover:text-[#f97316] transition-colors flex items-center"
+      >
+        Explore Full Gallery
+        <ArrowRight size={14} className="transition-transform group-hover/link:translate-x-1" />
+      </Link>
     </div>
-  );
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {FACILITIES.map((f, i) => (
+        <div
+          key={i}
+          className="group relative overflow-hidden rounded-[2.5rem] aspect-[4/5] shadow-xl border border-orange-50"
+        >
+          <img
+            src={f.image}
+            alt={f.title}
+            className="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a8a]/95 via-[#1e3a8a]/40 to-transparent flex flex-col justify-end p-6">
+            <div className="bg-orange-100/20 backdrop-blur-md w-14 h-14 rounded-2xl flex items-center justify-center text-white mb-6">
+              {f.icon}
+            </div>
+
+            <h3 className="text-2xl font-black text-white mb-3 tracking-tight">
+              {f.title}
+            </h3>
+
+            <p className="text-orange-100/80 text-sm font-medium">
+              {f.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
 };
 
 export default Home;
