@@ -62,7 +62,7 @@ const Events: React.FC = () => {
       location: "School Campus Ground",
       category: "Cultural",
       description: "A vibrant festive celebration featuring traditional folk dance, music, ethnic attire, and cultural bonding among students and teachers.",
-      image: "/cultural.JPG"
+      image: "/DandiyaCelebration.png"
     },
     {
       id: 6,
@@ -72,7 +72,7 @@ const Events: React.FC = () => {
       location: "School Art Rooms & Quadrangle",
       category: "Cultural",
       description: "Diwali creative preparations including diya colouring, eco-friendly handicrafts, and a student-managed diya exhibition and sale.",
-      image: "/Exi2.jpg"
+      image: "/DiyaDecoration.png"
     },
     {
       id: 7,
@@ -82,7 +82,7 @@ const Events: React.FC = () => {
       location: "School Auditorium",
       category: "Academic",
       description: "Special celebratory assembly, historical character role-play (Classes 1–4), and an inter-house general knowledge quiz (Classes 6–9).",
-      image: "/sa1.JPG"
+      image: "/ChildrensDayQuiz.png"
     },
     {
       id: 8,
@@ -112,7 +112,7 @@ const Events: React.FC = () => {
       location: "School Auditorium",
       category: "Academic",
       description: "Observing Mahaparinirvan Diwas with floral tributes, commemorative speeches, and honoring Dr. B. R. Ambedkar's monumental contributions to equality and the Constitution.",
-      image: "/ConstitutionDay2026.png"
+      image: "/AmbedkarDiwas.png"
     },
     {
       id: 11,
@@ -122,7 +122,7 @@ const Events: React.FC = () => {
       location: "School Auditorium",
       category: "Academic",
       description: "Competitive debate championship for Classes 6 to 10 encouraging articulate arguments, critical thinking, and public speaking confidence.",
-      image: "/Lib.jpg"
+      image: "/DebateCompetition.png"
     },
     {
       id: 12,
@@ -132,7 +132,7 @@ const Events: React.FC = () => {
       location: "School Auditorium",
       category: "Cultural",
       description: "Festive celebration featuring Christmas carols, Santa Claus visit, skits, exchange of greeting cards, and spreading joy.",
-      image: "/cultural.JPG"
+      image: "/ChristmasCelebration.png"
     },
     {
       id: 13,
@@ -152,7 +152,7 @@ const Events: React.FC = () => {
       location: "School Campus",
       category: "Cultural",
       description: "Observance of National Youth Day and Rajmata Jijau Jayanti paired with a hands-on kite making activity on Bagless Day.",
-      image: "/sa.JPG"
+      image: "/KiteActivity.png"
     },
     {
       id: 15,
@@ -162,7 +162,7 @@ const Events: React.FC = () => {
       location: "School Ground & Art Gallery",
       category: "Exhibition",
       description: "Grand 3-day student fine arts and crafts exhibition paired with patriotic Republic Day parade, flag unfurling, and cultural performances.",
-      image: "/Exi.jpg"
+      image: "/RepublicDayArt.png"
     },
     {
       id: 16,
@@ -182,7 +182,7 @@ const Events: React.FC = () => {
       location: "School Campus Ground",
       category: "Cultural",
       description: "Honoring the legendary Maratha warrior king with traditional lezim performances, historical speeches, powadas, and inspiring student tributes.",
-      image: "/sa.JPG"
+      image: "/ShivajiJayanti.png"
     },
     {
       id: 18,
@@ -202,7 +202,7 @@ const Events: React.FC = () => {
       location: "School Auditorium",
       category: "Celebration",
       description: "Felicitation of women faculty, guest talks on women empowerment, inspiring leadership presentations, and student appreciation sessions.",
-      image: "/Feli2.jpg"
+      image: "/WomensDay.png"
     }
   ];
 
