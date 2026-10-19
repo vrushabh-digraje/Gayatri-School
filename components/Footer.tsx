@@ -66,12 +66,12 @@ const Footer: React.FC = () => {
         {/* Links */}
         <div className="col-span-1 md:col-span-2 lg:col-span-5">
           <h3 className="text-lg font-black uppercase tracking-[0.2em] mb-10 text-[#0056b3]">Quick Navigation</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-[max-content_1fr] gap-x-10 sm:gap-x-12 gap-y-4">
             {/* Column 1: Main Pages */}
             <ul className="space-y-4 text-slate-400 font-bold uppercase text-[11px] tracking-widest">
               {NAV_LINKS.map(link => (
                 <li key={link.path}>
-                  <Link to={link.path} className="hover:text-white hover:translate-x-1 transition-all inline-block">{link.label}</Link>
+                  <Link to={link.path} className="hover:text-white hover:translate-x-1 transition-all inline-block whitespace-nowrap">{link.label}</Link>
                 </li>
               ))}
             </ul>
@@ -82,25 +82,25 @@ const Footer: React.FC = () => {
                 href="https://gemscbse.prisms.in/onlineenquiry" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5"
+                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
               >
-                Online Enquiry <ExternalLink size={11} className="text-slate-500" />
+                Online Enquiry <ExternalLink size={11} className="text-slate-500 shrink-0" />
               </a>
               <a 
                 href="https://gemscbse.prisms.in/onlinerecruitment" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5"
+                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
               >
-                Online Recruitment <ExternalLink size={11} className="text-slate-500" />
+                Online Recruitment <ExternalLink size={11} className="text-slate-500 shrink-0" />
               </a>
               <a 
                 href="https://gemscbse.prisms.in/onlinevisitor" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5"
+                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
               >
-                Online Visitor <ExternalLink size={11} className="text-slate-500" />
+                Online Visitor <ExternalLink size={11} className="text-slate-500 shrink-0" />
               </a>
 
               {/* Pay Now Button */}
@@ -109,9 +109,9 @@ const Footer: React.FC = () => {
                   href="https://gemscbse.prisms.in/pay" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-5 py-3 rounded-xl font-black text-xs uppercase tracking-wider shadow-lg hover:shadow-orange-500/25 hover:scale-105 transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-5 py-3 rounded-xl font-black text-xs uppercase tracking-wider shadow-lg hover:shadow-orange-500/25 hover:scale-105 transition-all duration-300 whitespace-nowrap"
                 >
-                  <CreditCard size={15} /> Pay Now
+                  <CreditCard size={15} className="shrink-0" /> Pay Now
                 </a>
               </div>
             </div>
