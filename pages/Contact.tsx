@@ -185,11 +185,11 @@ Message: ${message}`;
           <div className="w-full h-[450px] md:h-[520px] rounded-[2.5rem] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.06)] border border-orange-100 relative">
             <iframe
               title="Gayatri Group of School, Pune (Gayatri English Medium School , Moshi) Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.2033626298586!2d73.8447814!3d18.6661448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7f465d6a2f7%3A0xe54e26eb2a853612!2sGayatri%20Group%20of%20School%2C%20Pune%20(Gayatri%20English%20Medium%20School%20%2C%20Moshi)!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3420.9433702669435!2d73.84751727465522!3d18.652079165144983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7f1c66e20df%3A0x76b172ee85cf9271!2sGayatri%20Group%20of%20School%2C%20Pune%20(Gayatri%20English%20Medium%20School%20%2C%20Moshi)!5e1!3m2!1sen!2sin!4v1792392563544!5m2!1sen!2sin"
               className="w-full h-full border-0"
               loading="lazy"
               allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
             />
           </div>
         </div>
