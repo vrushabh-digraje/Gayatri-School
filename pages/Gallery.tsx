@@ -199,7 +199,7 @@ const Gallery: React.FC = () => {
     : allImages.filter(img => img.category === filter);
 
   return (
-    <div className="bg-[#fcfdff] min-h-screen pb-32">
+    <div className="bg-[#fcfdff] pb-16">
       {/* Decorative Header */}
       <section className="bg-slate-900 text-white py-32 px-6 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
@@ -240,7 +240,7 @@ const Gallery: React.FC = () => {
             <div 
               key={idx} 
               className="group bg-white rounded-[2.5rem] overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.03)] border border-white hover:shadow-2xl transition-all duration-700 animate-fade-in-up"
-              style={{ animationDelay: `${idx * 100}ms` }}
+              style={{ animationDelay: `${(idx % 6) * 60}ms` }}
             >
               <div className="relative aspect-square overflow-hidden">
                 <img 
