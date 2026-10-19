@@ -36,3 +36,16 @@ export interface SchoolEvent {
   title: string;
   description: string;
 }
+
+export interface BlogPost {
+  id: number;
+  slug: string;
+  title: string;
+  author: string;
+  date: string;
+  readTime?: string;
+  comments?: number;
+  excerpt: string;
+  category?: string;
+  image: string;
+}

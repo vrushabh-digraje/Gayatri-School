@@ -4,19 +4,8 @@ import * as ReactRouterDOM from 'react-router-dom';
 // Fix: Use namespace import to bypass named export resolution issues
 const { Link } = ReactRouterDOM as any;
 import { User, Calendar, Clock, ArrowRight, MessageSquare } from 'lucide-react';
-
-interface BlogPost {
-  id: number;
-  slug: string;
-  title: string;
-  author: string;
-  date: string;
-  readTime?: string;
-  comments?: number;
-  excerpt: string;
-  category?: string;
-  image: string;
-}
+import { BlogPost } from '../types';
+import { ARCHIVE_BLOGS } from '../data/archiveBlogs';
 
 const Blog: React.FC = () => {
   const blogs: BlogPost[] = [
@@ -301,7 +290,8 @@ const Blog: React.FC = () => {
         readTime: "8min",
         excerpt: "Success in secondary school requires more than just intelligence; it requires disciplined habits and time management strategies...",
         image: "/Edu.jpg"
-    }
+    },
+    ...ARCHIVE_BLOGS
   ];
 
 const blogsPerPage = 9;

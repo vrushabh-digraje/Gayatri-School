@@ -2,6 +2,17 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Clock, ArrowLeft } from 'lucide-react';
+import archiveBlogPosts from '../data/archiveBlogPosts.json';
+
+function renderArchiveNode(node: any, key?: number | string): React.ReactNode {
+  if (node === null || node === undefined) return null;
+  if (typeof node === 'string' || typeof node === 'number') return node;
+  if (Array.isArray(node)) return node.map((child, idx) => renderArchiveNode(child, idx));
+  const { type, props } = node;
+  const { children, ...restProps } = props || {};
+  const Component = type === 'Link' ? Link : type;
+  return React.createElement(Component, { key, ...restProps }, renderArchiveNode(children));
+}
 
 const BlogPostDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -2302,10 +2313,58 @@ const BlogPostDetail: React.FC = () => {
           </div>
         </div>
       )
+    },
+    'study-habits-secondary': {
+      meta: "Academic Dept",
+      date: "15 Jan 2025",
+      title: "Effective Study Habits for Secondary Students",
+      intro: "Success in secondary school requires more than just intelligence; it requires disciplined habits, structured time management strategies, and active recall techniques.",
+      content: (
+        <div className="max-w-4xl mx-auto">
+          <p className="text-slate-600 text-lg md:text-xl font-medium leading-[1.8] text-justify mb-10">
+            Transitioning to secondary school brings deeper academic content and greater personal responsibility. Developing consistent, disciplined study habits early on allows students to retain knowledge effectively and approach examinations with calm confidence.
+          </p>
+          <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+            <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+              1. Active Recall and Spaced Repetition
+            </h2>
+            <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+              Passive re-reading is among the least effective revision techniques. Instead, testing oneself, answering practice questions, and spacing review sessions over several days produces durable long-term memory.
+            </p>
+          </div>
+          <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+            <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+              2. Structured Time Management
+            </h2>
+            <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+              Break study hours into focused 25 to 40 minute intervals followed by short 5-minute mental breaks (the Pomodoro technique). This maintains peak focus and prevents mental fatigue.
+            </p>
+          </div>
+          <div className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 mb-8">
+            <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 tracking-tight">
+              3. Consistent Revision Routine
+            </h2>
+            <p className="text-slate-600 text-lg font-medium leading-relaxed mb-4">
+              Dedicate a quiet, organized study space free from mobile notifications. Reviewing notes daily prevents last-minute cramming and fosters genuine academic excellence.
+            </p>
+          </div>
+        </div>
+      )
     }
   };
 
-  const currentPost = posts[id as keyof typeof posts];
+  let currentPost: { meta: string; date: string; title: string; intro: string; content: React.ReactNode } | undefined = posts[id as keyof typeof posts];
+
+  if (!currentPost && id && (archiveBlogPosts as any)[id]) {
+    const archive = (archiveBlogPosts as any)[id];
+    currentPost = {
+      meta: archive.meta,
+      date: archive.date,
+      title: archive.title,
+      intro: archive.intro,
+      content: renderArchiveNode(archive.tree)
+    };
+  }
 
   if (!currentPost) {
     return (
