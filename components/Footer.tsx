@@ -29,9 +29,9 @@ const FooterLogo: React.FC = () => (
 const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-900 text-white pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_auto_1fr] gap-10 lg:gap-12">
         {/* Brand */}
-        <div className="col-span-1 md:col-span-2 lg:col-span-4">
+        <div className="col-span-1 md:col-span-2 lg:col-span-1">
           <FooterLogo />
           <p className="text-slate-400 text-lg leading-relaxed mb-10 max-w-md font-medium">
             Empowering students in Moshi and Pimpri-Chinchwad through excellence in education, holistic development, and character building since 2008.
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Links */}
-        <div className="col-span-1 md:col-span-2 lg:col-span-5">
+        <div className="col-span-1 md:col-span-1 lg:col-span-1">
           <h3 className="text-lg font-black uppercase tracking-[0.2em] mb-10 text-[#0056b3]">Quick Navigation</h3>
           <div className="grid grid-cols-1 sm:grid-cols-[max-content_1fr] gap-x-10 sm:gap-x-12 gap-y-4">
             {/* Column 1: Main Pages */}
@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Contact */}
-        <div className="col-span-1 md:col-span-2 lg:col-span-3">
+        <div className="col-span-1 md:col-span-1 lg:col-span-1">
           <h3 className="text-lg font-black uppercase tracking-[0.2em] mb-10 text-[#0056b3]">Contact Details</h3>
           <ul className="space-y-8 text-slate-400 text-sm font-medium">
             <li className="flex items-start space-x-5">
