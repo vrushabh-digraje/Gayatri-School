@@ -179,47 +179,18 @@ Message: ${message}`;
         </div>
       </section>
 
-      {/* Google Map Location Section */}
-      <section className="py-16 px-4 md:px-8 lg:px-24 bg-[#fffaf2]">
+      {/* Google Map Section */}
+      <section className="py-12 px-4 md:px-8 lg:px-24 bg-[#fffaf2]">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.04)] border border-orange-100">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-              <div>
-                <span className="inline-block px-4 py-1.5 bg-orange-100 text-[#f97316] rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-3">
-                  Campus Location
-                </span>
-                <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
-                  Find Us on Google Maps
-                </h2>
-              </div>
-              <a
-                href="https://www.google.com/maps?q=Gayatri+English+Medium+School+Moshi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#1e3a8a] text-white px-6 py-3 rounded-full text-xs font-black uppercase tracking-wider hover:bg-[#f97316] transition-all duration-300 shadow-md"
-              >
-                <MapPin size={16} /> Open in Google Maps
-              </a>
-            </div>
-
-            <div className="mb-6 p-5 bg-orange-50/50 rounded-2xl border border-orange-100 flex items-start gap-3">
-              <MapPin className="text-[#f97316] flex-shrink-0 mt-1" size={22} />
-              <p className="text-slate-700 text-sm md:text-base font-semibold leading-relaxed">
-                <span className="font-bold text-[#1e3a8a] text-base md:text-lg">Gayatri Group of School, Pune (Gayatri English Medium School , Moshi)</span><br />
-                Row House 05, NH60, Gandharv Nagari, Sector No. 5, Moshi, Pimpri-Chinchwad, Maharashtra 411070
-              </p>
-            </div>
-
-            <div className="w-full h-[450px] md:h-[500px] rounded-3xl overflow-hidden shadow-lg border border-slate-200 relative">
-              <iframe
-                title="Gayatri Group of School, Pune (Gayatri English Medium School , Moshi) Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.2033626298586!2d73.8447814!3d18.6661448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7f465d6a2f7%3A0xe54e26eb2a853612!2sGayatri%20English%20Medium%20School!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
-                className="w-full h-full border-0"
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
+          <div className="w-full h-[450px] md:h-[520px] rounded-[2.5rem] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.06)] border border-orange-100 relative">
+            <iframe
+              title="Gayatri English Medium School Moshi Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.2033626298586!2d73.8447814!3d18.6661448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7f465d6a2f7%3A0xe54e26eb2a853612!2sGayatri%20English%20Medium%20School!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              className="w-full h-full border-0"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </section>
