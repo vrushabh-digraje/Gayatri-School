@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
         {/* Links */}
         <div className="col-span-1 md:col-span-1 lg:col-span-1">
           <h3 className="text-lg font-black uppercase tracking-[0.2em] mb-10 text-[#0056b3]">Quick Navigation</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-[max-content_1fr] gap-x-10 sm:gap-x-12 gap-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-[max-content_auto] gap-x-6 sm:gap-x-6 gap-y-4">
             {/* Column 1: Main Pages */}
             <ul className="space-y-4 text-slate-400 font-bold uppercase text-[11px] tracking-widest">
               {NAV_LINKS.map(link => (
