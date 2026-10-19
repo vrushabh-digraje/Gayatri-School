@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="w-full relative z-[100] bg-white overflow-x-clip">
+    <header className="w-full sticky top-0 z-[100] bg-white shadow-sm overflow-x-clip">
       {/* Top Utility Bar - Navy Background */}
       <div className="bg-[#1e3a8a] text-white py-2 hidden lg:block">
         <div className="max-w-[1440px] mx-auto px-8 flex justify-between items-center text-[11px] font-bold uppercase tracking-[0.2em]">
