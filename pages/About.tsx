@@ -63,7 +63,7 @@ const About: React.FC = () => {
     {
       name: "Hon'ble Kavita Kadu Patil",
       role: "Managing Director, SVSPM'S",
-      image: "Kavita.jpg",
+      image: "/Kavita.jpg",
       colorClass: "text-[#f97316]",
       location: "GEMS Office",
       bio: "As the Director of GEMS, Hon'ble Kavita Aniket Kadu Patil has shown exemplary leadership in shaping the future of education.",
