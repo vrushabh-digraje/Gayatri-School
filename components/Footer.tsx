@@ -3,7 +3,7 @@ import React from 'react';
 import * as ReactRouterDOM from 'react-router-dom';
 // Fix: Use namespace import to bypass named export resolution issues
 const { Link } = ReactRouterDOM as any;
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube, ExternalLink, CreditCard } from 'lucide-react';
 import { NAV_LINKS } from '../constants';
 
 const FooterLogo: React.FC = () => (
@@ -29,9 +29,9 @@ const FooterLogo: React.FC = () => (
 const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-900 text-white pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
         {/* Brand */}
-        <div className="col-span-1 md:col-span-2">
+        <div className="col-span-1 md:col-span-2 lg:col-span-4">
           <FooterLogo />
           <p className="text-slate-400 text-lg leading-relaxed mb-10 max-w-md font-medium">
             Empowering students in Moshi and Pimpri-Chinchwad through excellence in education, holistic development, and character building since 2008.
@@ -64,19 +64,62 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Links */}
-        <div>
+        <div className="col-span-1 md:col-span-2 lg:col-span-5">
           <h3 className="text-lg font-black uppercase tracking-[0.2em] mb-10 text-[#0056b3]">Quick Navigation</h3>
-          <ul className="space-y-4 text-slate-400 font-bold uppercase text-[11px] tracking-widest">
-            {NAV_LINKS.map(link => (
-              <li key={link.path}>
-                <Link to={link.path} className="hover:text-white hover:translate-x-1 transition-all inline-block">{link.label}</Link>
-              </li>
-            ))}
-          </ul>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+            {/* Column 1: Main Pages */}
+            <ul className="space-y-4 text-slate-400 font-bold uppercase text-[11px] tracking-widest">
+              {NAV_LINKS.map(link => (
+                <li key={link.path}>
+                  <Link to={link.path} className="hover:text-white hover:translate-x-1 transition-all inline-block">{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+
+            {/* Column 2: In Front of Home Links & Pay Now Button */}
+            <div className="flex flex-col space-y-4 text-slate-400 font-bold uppercase text-[11px] tracking-widest">
+              <a 
+                href="https://gemscbse.prisms.in/onlineenquiry" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5"
+              >
+                Online Enquiry <ExternalLink size={11} className="text-slate-500" />
+              </a>
+              <a 
+                href="https://gemscbse.prisms.in/onlinerecruitment" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5"
+              >
+                Online Recruitment <ExternalLink size={11} className="text-slate-500" />
+              </a>
+              <a 
+                href="https://gemscbse.prisms.in/onlinevisitor" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5"
+              >
+                Online Visitor <ExternalLink size={11} className="text-slate-500" />
+              </a>
+
+              {/* Pay Now Button */}
+              <div className="pt-2">
+                <a 
+                  href="https://gemscbse.prisms.in/pay" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-5 py-3 rounded-xl font-black text-xs uppercase tracking-wider shadow-lg hover:shadow-orange-500/25 hover:scale-105 transition-all duration-300"
+                >
+                  <CreditCard size={15} /> Pay Now
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Contact */}
-        <div>
+        <div className="col-span-1 md:col-span-2 lg:col-span-3">
           <h3 className="text-lg font-black uppercase tracking-[0.2em] mb-10 text-[#0056b3]">Contact Details</h3>
           <ul className="space-y-8 text-slate-400 text-sm font-medium">
             <li className="flex items-start space-x-5">
