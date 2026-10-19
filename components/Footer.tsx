@@ -16,8 +16,8 @@ const FooterLogo: React.FC = () => (
       />
     </div>
     <div className="flex flex-col">
-      <span className="text-2xl xl:text-3xl font-black tracking-tighter uppercase leading-none block text-white">
-        Gayatri English Medium School
+      <span className="text-2xl xl:text-3xl font-black uppercase leading-tight block text-white tracking-tight">
+        GAYATRI ENGLISH MEDIUM<br />SCHOOL
       </span>
       <span className="text-[12px] xl:text-[14px] font-bold uppercase tracking-[0.2em] text-slate-500 mt-2">
         Moshi, Pimpri-Chinchwad | Pune
