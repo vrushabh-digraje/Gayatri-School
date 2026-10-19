@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="w-full sticky top-0 z-[100] bg-white">
+    <header className="w-full sticky top-0 z-[100] bg-white overflow-x-clip">
       {/* Top Utility Bar - Navy Background */}
       <div className="bg-[#1e3a8a] text-white py-2 hidden lg:block">
         <div className="max-w-[1440px] mx-auto px-8 flex justify-between items-center text-[11px] font-bold uppercase tracking-[0.2em]">
@@ -85,8 +85,8 @@ const Navbar: React.FC = () => {
 
       {/* Primary Navigation */}
       <nav className="bg-white border-b border-slate-100 shadow-sm relative">
-        <div className="max-w-[1440px] mx-auto px-4 xl:px-8">
-          <div className="flex justify-start items-center h-16 lg:h-20 gap-8 2xl:gap-12">
+        <div className="max-w-[1440px] mx-auto px-4 xl:px-6 2xl:px-8">
+          <div className="flex justify-start items-center h-16 lg:h-20 gap-3 xl:gap-5 2xl:gap-12">
             <Link to="/" className="flex items-center flex-shrink-0">
               <Logo />
             </Link>
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
                 >
                   <Link
                     to={link.path}
-                    className={`px-1 2xl:px-2 py-2 text-[11px] 2xl:text-[13px] font-bold uppercase tracking-widest flex items-center gap-0.5 transition-all ${
+                    className={`px-1 2xl:px-2 py-2 text-[11px] 2xl:text-[13px] font-bold uppercase tracking-wider 2xl:tracking-widest flex items-center gap-0.5 transition-all ${
                       location.pathname.startsWith(link.path) && link.path !== '/' ? 'text-[#f97316]' : 'text-[#1e3a8a] hover:text-[#f97316]'
                     }`}
                   >
@@ -164,7 +164,7 @@ const Navbar: React.FC = () => {
   href="#/cbse"
   target="_blank"
   rel="noopener noreferrer"
-  className="ml-2 inline-flex items-center justify-center whitespace-nowrap bg-[#f97316] text-white px-4 py-2 rounded-md text-[11px] font-bold uppercase tracking-wide hover:bg-[#ea580c] transition-all duration-300"
+  className="ml-2 inline-flex items-center justify-center whitespace-nowrap bg-[#f97316] text-white px-3 2xl:px-4 py-2 rounded-md text-[10px] 2xl:text-[11px] font-bold uppercase tracking-wide hover:bg-[#ea580c] transition-all duration-300"
 >
   MPD
 </a>
@@ -173,7 +173,7 @@ const Navbar: React.FC = () => {
   href="https://gemscbse.prisms.in/onlineadmission"
   target="_blank"
   rel="noopener noreferrer"
-  className="ml-auto inline-flex items-center justify-center whitespace-nowrap bg-[#f97316] text-white px-4 py-2 rounded-md text-[11px] font-bold uppercase tracking-widest hover:bg-[#ea580c] transition"
+  className="ml-auto inline-flex items-center justify-center whitespace-nowrap bg-[#f97316] text-white px-3 2xl:px-4 py-2 rounded-md text-[10px] 2xl:text-[11px] font-bold uppercase tracking-wider 2xl:tracking-widest hover:bg-[#ea580c] transition"
 >
   APPLY ONLINE
 </a>
