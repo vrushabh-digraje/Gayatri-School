@@ -191,7 +191,7 @@ const Primary: React.FC = () => {
             to="/admissions" 
             className="inline-flex items-center gap-4 bg-white text-indigo-600 px-12 py-6 rounded-full font-black text-sm uppercase tracking-[0.2em] transition-all transform hover:scale-105 hover:shadow-2xl"
           >
-            Admission 2026-27 <ArrowRight size={20} />
+            Admission 2027-28 <ArrowRight size={20} />
           </Link>
         </div>
       </section>

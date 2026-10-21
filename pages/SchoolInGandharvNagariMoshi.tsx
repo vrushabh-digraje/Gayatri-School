@@ -70,7 +70,7 @@ const SchoolInGandharvNagariMoshi: React.FC = () => {
     },
     {
       title: "Admission Requirements and Availability",
-      description: "Clear, transparent admission procedures for the 2026–27 session with dedicated counselling and guidance for incoming families.",
+      description: "Clear, transparent admission procedures for the 2027–28 session with dedicated counselling and guidance for incoming families.",
       icon: <Calendar className="w-6 h-6 text-[#f97316]" />
     },
     {
@@ -116,7 +116,7 @@ const SchoolInGandharvNagariMoshi: React.FC = () => {
     },
     {
       question: "Is admission currently open at Gayatri English Medium School?",
-      answer: "The school's official website currently displays an Admissions Open 2026-27 message. Parents should contact the school to confirm current availability and admission requirements."
+      answer: "The school's official website currently displays an Admissions Open 2027-28 message. Parents should contact the school to confirm current availability and admission requirements."
     },
     {
       question: "What board does Gayatri English Medium School follow?",
@@ -420,7 +420,7 @@ const SchoolInGandharvNagariMoshi: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <div className="bg-gradient-to-r from-[#ea580c] to-[#f97316] text-white p-8 md:p-14 rounded-3xl shadow-xl">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/20 text-white rounded-full text-xs font-black uppercase tracking-widest mb-6 border border-white/30 backdrop-blur-sm">
-              <Calendar size={14} /> Admissions Open 2026–27
+              <Calendar size={14} /> Admissions Open 2027–28
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-6 font-serif">
@@ -428,7 +428,7 @@ const SchoolInGandharvNagariMoshi: React.FC = () => {
             </h2>
 
             <p className="text-orange-50 text-base md:text-lg leading-relaxed mb-6 font-medium">
-              The school's official website currently displays an <strong>Admissions Open 2026-27</strong> message and provides an admission enquiry option.
+              The school's official website currently displays an <strong>Admissions Open 2027-28</strong> message and provides an admission enquiry option.
             </p>
 
             <p className="text-orange-100 text-sm md:text-base leading-relaxed mb-8">

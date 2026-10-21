@@ -241,7 +241,7 @@ const Secondary: React.FC = () => {
                 to="/admissions" 
                 className="bg-white text-slate-900 px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest transition-all hover:scale-105 hover:shadow-2xl"
               >
-                Admission Open 2026
+                Admission Open 2027-28
               </Link>
               <Link 
                 to="/gallery" 

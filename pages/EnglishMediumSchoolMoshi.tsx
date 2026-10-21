@@ -597,7 +597,7 @@ const EnglishMediumSchoolMoshi: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <div className="bg-gradient-to-r from-orange-500 to-[#ea580c] text-white p-8 md:p-14 rounded-3xl shadow-xl">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/20 text-white rounded-full text-xs font-black uppercase tracking-widest mb-6 border border-white/30 backdrop-blur-sm">
-              <Calendar size={14} /> Admissions Open 2026–27
+              <Calendar size={14} /> Admissions Open 2027–28
             </div>
             
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-6 font-serif">
@@ -605,7 +605,7 @@ const EnglishMediumSchoolMoshi: React.FC = () => {
             </h2>
 
             <p className="text-orange-50 text-base md:text-lg leading-relaxed mb-6 font-medium">
-              Parents interested in admission should use the school's official admission information and contact the school directly for the latest requirements. The school's website currently displays <strong>Admissions Open 2026–27</strong> and provides an admission enquiry option.
+              Parents interested in admission should use the school's official admission information and contact the school directly for the latest requirements. The school's website currently displays <strong>Admissions Open 2027–28</strong> and provides an admission enquiry option.
             </p>
 
             <p className="text-orange-100 text-sm md:text-base leading-relaxed mb-8">

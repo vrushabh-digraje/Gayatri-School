@@ -30,7 +30,7 @@ const Admissions: React.FC = () => {
           
           <h1 className="text-6xl md:text-8xl font-black mb-10 tracking-tight leading-[1.1]">
             <span className="bg-gradient-to-r from-[#1e3a8a] to-[#f97316] bg-clip-text text-transparent">
-              Admissions Open for <br className="hidden md:block" /> 2026-2027
+              Admissions Open for <br className="hidden md:block" /> 2027-2028
             </span>
           </h1>
 

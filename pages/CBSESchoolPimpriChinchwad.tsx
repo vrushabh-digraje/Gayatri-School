@@ -593,7 +593,7 @@ const CBSESchoolPimpriChinchwad: React.FC = () => {
               </h3>
               
               <div className="inline-block px-4 py-2 bg-emerald-100 text-emerald-800 rounded-xl font-black text-xs uppercase tracking-wider mb-6">
-                Admissions Open 2026–27
+                Admissions Open 2027–28
               </div>
 
               <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4 font-medium">
@@ -703,7 +703,7 @@ const CBSESchoolPimpriChinchwad: React.FC = () => {
 
           <div className="relative z-10">
             <span className="inline-block px-4 py-1 bg-white/20 rounded-full text-xs font-black uppercase tracking-widest mb-6">
-              Admissions Open 2026–27
+              Admissions Open 2027–28
             </span>
             <h2 className="text-3xl md:text-5xl font-black mb-6 font-serif">
               Begin Your Child's Journey at GEMS

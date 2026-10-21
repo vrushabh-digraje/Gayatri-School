@@ -70,8 +70,8 @@ const Enquire: React.FC = () => {
                 <div className="space-y-2">
                   <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Academic Year <span className="text-rose-500">*</span></label>
                   <select name="academicYear" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-blue-600 font-bold text-slate-700 transition-all appearance-none cursor-pointer">
-                    <option>2026-2027</option>
                     <option>2027-2028</option>
+                    <option>2028-2029</option>
                   </select>
                 </div>
                 <div className="space-y-2">

@@ -128,7 +128,7 @@ const Home: React.FC = () => {
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
             <span className="inline-block px-4 py-1.5 bg-[#f97316] rounded-[4px] text-[10px] font-black uppercase tracking-[0.2em] text-white mb-6 shadow-lg">
-              Admissions Open 2026-27
+              Admissions Open 2027-28
             </span>
             
             <h1 className="text-white mb-6 leading-tight">
@@ -201,7 +201,7 @@ const Home: React.FC = () => {
                 to="/enquire"
                 className="bg-[#1e3a8a] text-white px-10 py-4 font-black text-xs uppercase tracking-widest rounded-lg hover:shadow-[0_10px_30px_rgba(30,58,138,0.3)] transition-all transform hover:-translate-y-1"
               >
-                Admission 2026-27
+                Admission 2027-28
               </Link>
               <Link to="/about" className="bg-[#f97316] text-white px-10 py-4 font-black text-xs uppercase tracking-widest rounded-lg hover:shadow-[0_10px_30px_rgba(249,115,22,0.3)] transition-all transform hover:-translate-y-1">
                 About Us
