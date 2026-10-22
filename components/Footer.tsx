@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer" 
                 className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
               >
-                Online Visitor <ExternalLink size={11} className="text-slate-500 shrink-0" />
+                Online Appointment <ExternalLink size={11} className="text-slate-500 shrink-0" />
               </a>
 
               {/* Pay Now Button */}
