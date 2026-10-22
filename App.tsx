@@ -2,8 +2,8 @@
 import React, { useEffect } from 'react';
 import * as ReactRouterDOM from 'react-router-dom';
 // Fix: Use namespace import to bypass named export resolution issues in this environment
-const { HashRouter, Routes, Route, useLocation } = ReactRouterDOM as any;
-const Router = HashRouter;
+const { BrowserRouter, Routes, Route, useLocation } = ReactRouterDOM as any;
+const Router = BrowserRouter;
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
