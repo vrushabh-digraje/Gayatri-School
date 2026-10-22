@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer" 
                 className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
               >
-                Online Enquiry <ExternalLink size={11} className="text-slate-500 shrink-0" />
+                Admission Enquiry <ExternalLink size={11} className="text-slate-500 shrink-0" />
               </a>
               <a 
                 href="https://gemscbse.prisms.in/onlinevisitor" 
