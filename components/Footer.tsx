@@ -79,20 +79,20 @@ const Footer: React.FC = () => {
             {/* Column 2: In Front of Home Links & Pay Now Button */}
             <div className="flex flex-col space-y-4 text-slate-400 font-bold uppercase text-[11px] tracking-widest">
               <a 
+                href="https://gemscbse.prisms.in/onlinerecruitment" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
+              >
+                Career <ExternalLink size={11} className="text-slate-500 shrink-0" />
+              </a>
+              <a 
                 href="https://gemscbse.prisms.in/onlineenquiry" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
               >
                 Online Enquiry <ExternalLink size={11} className="text-slate-500 shrink-0" />
-              </a>
-              <a 
-                href="https://gemscbse.prisms.in/onlinerecruitment" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
-              >
-                Online Recruitment <ExternalLink size={11} className="text-slate-500 shrink-0" />
               </a>
               <a 
                 href="https://gemscbse.prisms.in/onlinevisitor" 
