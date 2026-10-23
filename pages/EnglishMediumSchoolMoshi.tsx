@@ -39,6 +39,65 @@ const EnglishMediumSchoolMoshi: React.FC = () => {
       );
     }
 
+        // Inject Schema Markup (JSON-LD)
+    const scriptId = "schema-english-medium-school-in-moshi";
+    let script = document.getElementById(scriptId) as HTMLScriptElement | null;
+    if (!script) {
+      script = document.createElement("script");
+      script.id = scriptId;
+      script.type = "application/ld+json";
+      script.textContent = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "School",
+      "@id": "https://gayatrischoolpune.com/#school",
+      "name": "Gayatri English Medium School",
+      "url": "https://gayatrischoolpune.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Moshi",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://gayatrischoolpune.com/english-medium-school-in-moshi/#webpage",
+      "url": "https://gayatrischoolpune.com/english-medium-school-in-moshi",
+      "name": "English Medium School in Moshi | Gayatri English Medium School",
+      "description": "Explore Gayatri English Medium School in Moshi, Pune. Find school information, learning environment, facilities and admission details.",
+      "about": {
+        "@id": "https://gayatrischoolpune.com/#school"
+      },
+      "breadcrumb": {
+        "@id": "https://gayatrischoolpune.com/english-medium-school-in-moshi/#breadcrumb"
+      },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://gayatrischoolpune.com/english-medium-school-in-moshi/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://gayatrischoolpune.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "English Medium School in Moshi",
+          "item": "https://gayatrischoolpune.com/english-medium-school-in-moshi"
+        }
+      ]
+    }
+  ]
+});
+      document.head.appendChild(script);
+    }
+
     window.scrollTo(0, 0);
   }, []);
 

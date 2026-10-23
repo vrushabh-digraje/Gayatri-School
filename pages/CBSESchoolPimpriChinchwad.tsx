@@ -33,6 +33,65 @@ const CBSESchoolPimpriChinchwad: React.FC = () => {
       metaDesc.setAttribute('content', 'Looking for a CBSE school in Pimpri Chinchwad? Explore Gayatri English Medium School in Moshi, PCMC, its CBSE affiliation, location and admissions.');
     }
 
+        // Inject Schema Markup (JSON-LD)
+    const scriptId = "schema-cbse-school-in-pimpri-chinchwad";
+    let script = document.getElementById(scriptId) as HTMLScriptElement | null;
+    if (!script) {
+      script = document.createElement("script");
+      script.id = scriptId;
+      script.type = "application/ld+json";
+      script.textContent = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "School",
+      "@id": "https://gayatrischoolpune.com/#school",
+      "name": "Gayatri English Medium School",
+      "url": "https://gayatrischoolpune.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Moshi",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://gayatrischoolpune.com/cbse-school-in-pimpri-chinchwad/#webpage",
+      "url": "https://gayatrischoolpune.com/cbse-school-in-pimpri-chinchwad",
+      "name": "CBSE School in Pimpri-Chinchwad | Gayatri English Medium School",
+      "description": "Find school information, facilities and admission details for Gayatri English Medium School serving families in the Pimpri-Chinchwad area.",
+      "about": {
+        "@id": "https://gayatrischoolpune.com/#school"
+      },
+      "breadcrumb": {
+        "@id": "https://gayatrischoolpune.com/cbse-school-in-pimpri-chinchwad/#breadcrumb"
+      },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://gayatrischoolpune.com/cbse-school-in-pimpri-chinchwad/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://gayatrischoolpune.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "CBSE School in Pimpri-Chinchwad",
+          "item": "https://gayatrischoolpune.com/cbse-school-in-pimpri-chinchwad"
+        }
+      ]
+    }
+  ]
+});
+      document.head.appendChild(script);
+    }
+
     window.scrollTo(0, 0);
   }, []);
 
