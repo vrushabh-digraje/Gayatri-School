@@ -160,14 +160,14 @@ const Navbar: React.FC = () => {
                 </div>
               ))}
 
-              <a
-  href="#/cbse"
+              <Link
+  to="/cbse"
   target="_blank"
   rel="noopener noreferrer"
   className="ml-2 inline-flex items-center justify-center whitespace-nowrap bg-[#f97316] text-white px-3 2xl:px-4 py-2 rounded-md text-[10px] 2xl:text-[11px] font-bold uppercase tracking-wide hover:bg-[#ea580c] transition-all duration-300"
 >
   MPD
-</a>
+</Link>
 
               <a
   href="https://gemscbse.prisms.in/onlineadmission"
@@ -249,14 +249,13 @@ const Navbar: React.FC = () => {
                 >
                   Enquire Now
                 </button>
-<a
-  href="#/cbse"
-  target="_blank"
-  rel="noopener noreferrer"
+<Link
+  to="/cbse"
+  onClick={() => setIsOpen(false)}
   className="mt-3 block w-full bg-[#1e3a8a] text-white text-center py-5 font-bold uppercase tracking-widest rounded-md shadow-lg"
 >
   MPD
-</a>
+</Link>
 </div>
               </div>
             </div>
