@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import * as ReactRouterDOM from 'react-router-dom';
 // Fix: Use namespace import to bypass named export resolution issues in this environment
-const { BrowserRouter, Routes, Route, useLocation } = ReactRouterDOM as any;
+const { BrowserRouter, Routes, Route, useLocation, useNavigate } = ReactRouterDOM as any;
 const Router = BrowserRouter;
 
 import Navbar from './components/Navbar';
@@ -50,6 +50,24 @@ const PlaceholderPage = ({ title }: { title: string }) => (
   </div>
 );
 
+const HashCleaner: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (window.location.hash && window.location.hash.startsWith('#')) {
+      const clean = window.location.hash.replace(/^#\/?/, '/');
+      if (clean && clean !== '/' && clean !== location.pathname) {
+        navigate(clean, { replace: true });
+      } else {
+        window.history.replaceState(null, '', location.pathname + location.search);
+      }
+    }
+  }, [location, navigate]);
+
+  return null;
+};
+
 const App: React.FC = () => {
   const [isAutoModalOpen, setIsAutoModalOpen] = useState(false);
 
@@ -64,6 +82,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <ScrollToTop />
+      <HashCleaner />
       <div className="flex flex-col min-h-screen w-full overflow-x-clip">
         <Navbar />
         <FloatingContactButton />
