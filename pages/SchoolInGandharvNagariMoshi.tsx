@@ -40,6 +40,65 @@ const SchoolInGandharvNagariMoshi: React.FC = () => {
       );
     }
 
+        // Inject Schema Markup (JSON-LD)
+    const scriptId = "schema-school-in-gandharv-nagari-moshi";
+    let script = document.getElementById(scriptId) as HTMLScriptElement | null;
+    if (!script) {
+      script = document.createElement("script");
+      script.id = scriptId;
+      script.type = "application/ld+json";
+      script.textContent = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "School",
+      "@id": "https://gayatrischoolpune.com/#school",
+      "name": "Gayatri English Medium School",
+      "url": "https://gayatrischoolpune.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Moshi",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://gayatrischoolpune.com/school-in-gandharv-nagari-moshi/#webpage",
+      "url": "https://gayatrischoolpune.com/school-in-gandharv-nagari-moshi",
+      "name": "School in Gandharv Nagari Moshi | Gayatri School",
+      "description": "Looking for a school in Gandharv Nagari Moshi? Explore Gayatri English Medium School, its location, CBSE curriculum and admission information.",
+      "about": {
+        "@id": "https://gayatrischoolpune.com/#school"
+      },
+      "breadcrumb": {
+        "@id": "https://gayatrischoolpune.com/school-in-gandharv-nagari-moshi/#breadcrumb"
+      },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://gayatrischoolpune.com/school-in-gandharv-nagari-moshi/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://gayatrischoolpune.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "School in Gandharv Nagari Moshi",
+          "item": "https://gayatrischoolpune.com/school-in-gandharv-nagari-moshi"
+        }
+      ]
+    }
+  ]
+});
+      document.head.appendChild(script);
+    }
+
     window.scrollTo(0, 0);
   }, []);
 
