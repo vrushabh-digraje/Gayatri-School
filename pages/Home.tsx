@@ -130,7 +130,7 @@ const Home: React.FC = () => {
             <button
               type="button"
               onClick={() => setIsFormOpen(true)}
-              className="neon-glow-admissions inline-flex items-center justify-center gap-2 sm:gap-2.5 px-4 sm:px-6 md:px-7 py-1.5 sm:py-2 mb-6 rounded-full bg-[#f97316] backdrop-blur-md transition-all duration-300 hover:scale-[1.03] active:scale-95 group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(249,115,22,1),0_0_60px_rgba(251,191,36,0.8)]"
+              className="neon-glow-admissions inline-flex items-center justify-center gap-2 sm:gap-2.5 px-4 sm:px-6 md:px-7 py-1.5 sm:py-2 -mt-3 sm:-mt-4 mb-7 sm:mb-8 rounded-full bg-[#f97316] backdrop-blur-md transition-all duration-300 hover:scale-[1.03] active:scale-95 group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(249,115,22,1),0_0_60px_rgba(251,191,36,0.8)]"
               title="Click to Enquire for Admissions 2027-28"
             >
               <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5 shrink-0">
