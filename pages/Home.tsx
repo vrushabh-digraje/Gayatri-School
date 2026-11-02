@@ -130,14 +130,14 @@ const Home: React.FC = () => {
             <button
               type="button"
               onClick={() => setIsFormOpen(true)}
-              className="neon-glow-admissions inline-flex items-center justify-center gap-2.5 sm:gap-3 px-5 sm:px-8 md:px-9 py-2.5 sm:py-3 mb-6 rounded-full bg-[#f97316] border-2 border-white/80 backdrop-blur-md transition-all duration-300 hover:scale-[1.03] active:scale-95 group cursor-pointer shadow-xl hover:shadow-[0_0_30px_rgba(249,115,22,1),0_0_60px_rgba(251,191,36,0.8)]"
+              className="neon-glow-admissions inline-flex items-center justify-center gap-2 sm:gap-2.5 px-4 sm:px-6 md:px-7 py-1.5 sm:py-2 mb-6 rounded-full bg-[#f97316] backdrop-blur-md transition-all duration-300 hover:scale-[1.03] active:scale-95 group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(249,115,22,1),0_0_60px_rgba(251,191,36,0.8)]"
               title="Click to Enquire for Admissions 2027-28"
             >
-              <span className="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3 shrink-0">
+              <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-80"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-white shadow-[0_0_10px_#ffffff]"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-white shadow-[0_0_8px_#ffffff]"></span>
               </span>
-              <span className="text-white font-black text-sm sm:text-lg md:text-xl lg:text-2xl tracking-wide sm:tracking-wider uppercase whitespace-nowrap drop-shadow-[0_2px_4px_rgba(0,0,0,0.25)]">
+              <span className="text-white font-black text-xs sm:text-sm md:text-base lg:text-lg tracking-wide sm:tracking-wider uppercase whitespace-nowrap drop-shadow-[0_1px_3px_rgba(0,0,0,0.2)]">
                 ADMISSIONS OPEN 2027–28
               </span>
             </button>
