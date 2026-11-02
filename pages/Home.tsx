@@ -111,7 +111,7 @@ const Home: React.FC = () => {
   return (
     <div className="bg-[#fff9f2] overflow-hidden">
       {/* Hero Section - Using Orange/Navy Mix Overlay */}
-      <section className="relative pt-24 min-h-[75vh] flex items-center justify-center overflow-hidden px-4 sm:px-8 lg:px-24 text-center">
+      <section className="relative pt-14 sm:pt-16 md:pt-20 pb-10 sm:pb-14 min-h-[75vh] flex items-center justify-center overflow-hidden px-4 sm:px-8 lg:px-24 text-center">
         <div className="absolute inset-0 z-0">
           {HERO_IMAGES.map((img, idx) => (
             <img 
@@ -125,7 +125,7 @@ const Home: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-white/50"></div>
         </div>
         
-        <div className="relative z-10 max-w-4xl mx-auto">
+        <div className="relative z-10 max-w-4xl mx-auto -translate-y-3 sm:-translate-y-6 md:-translate-y-8">
           <div className="animate-fade-in-up">
             <button
               type="button"
@@ -150,7 +150,7 @@ const Home: React.FC = () => {
               </span>
             </h1>
 
-            <div className="w-full overflow-hidden whitespace-nowrap mb-8 max-w-lg mx-auto py-2 bg-white/15 backdrop-blur-md rounded-full border border-white/30 shadow-sm">
+            <div className="w-full overflow-hidden whitespace-nowrap mb-6 sm:mb-7 max-w-lg mx-auto py-2 bg-white/15 backdrop-blur-md rounded-full border border-white/30 shadow-sm">
               <div className="animate-marquee inline-block">
                 <span className="text-[10px] md:text-[11px] font-black text-white uppercase tracking-[0.2em] mr-16">School Affiliation Number: 1130818</span>
                 <span className="text-[10px] md:text-[11px] font-black text-white uppercase tracking-[0.2em] mr-16">School Code: 30740</span>
@@ -159,7 +159,7 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            <p className="text-white text-base md:text-xl font-medium max-w-2xl mx-auto leading-relaxed mb-10 opacity-95 drop-shadow-sm">
+            <p className="text-white text-base md:text-xl font-medium max-w-2xl mx-auto leading-relaxed mb-7 sm:mb-8 opacity-95 drop-shadow-sm">
               Gayatri English Medium School Moshi PCMC offers a premier CBSE curriculum designed for the holistic growth of every child.
             </p>
 
