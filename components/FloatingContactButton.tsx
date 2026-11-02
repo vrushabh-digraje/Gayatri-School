@@ -74,7 +74,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               onClick={() => setIsOpen(false)}
               className="absolute top-6 right-6 text-slate-300 hover:text-slate-600 transition-colors"
             >
-              <X size={24} />
+              <X size={19} />
             </button>
 
             {/* Header */}

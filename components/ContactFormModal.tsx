@@ -48,7 +48,7 @@ const [message, setMessage] = useState("");
           onClick={onClose}
           className="absolute top-6 right-6 text-slate-300 hover:text-slate-600 transition-colors"
         >
-          <X size={24} />
+          <X size={19} />
         </button>
 
         {/* Header */}
