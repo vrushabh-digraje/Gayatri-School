@@ -111,7 +111,7 @@ const Home: React.FC = () => {
   return (
     <div className="bg-[#fff9f2] overflow-hidden">
       {/* Hero Section - Using Orange/Navy Mix Overlay */}
-      <section className="relative pt-14 sm:pt-16 md:pt-20 pb-10 sm:pb-14 min-h-[75vh] flex items-center justify-center overflow-hidden px-4 sm:px-8 lg:px-24 text-center">
+      <section className="relative pt-16 sm:pt-20 md:pt-22 pb-10 sm:pb-14 min-h-[75vh] flex items-center justify-center overflow-hidden px-4 sm:px-8 lg:px-24 text-center">
         <div className="absolute inset-0 z-0">
           {HERO_IMAGES.map((img, idx) => (
             <img 
@@ -125,19 +125,19 @@ const Home: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-white/50"></div>
         </div>
         
-        <div className="relative z-10 max-w-4xl mx-auto -translate-y-3 sm:-translate-y-6 md:-translate-y-8">
+        <div className="relative z-10 max-w-4xl mx-auto -translate-y-1 sm:-translate-y-2 md:-translate-y-3">
           <div className="animate-fade-in-up">
             <button
               type="button"
               onClick={() => setIsFormOpen(true)}
-              className="neon-glow-admissions inline-flex items-center justify-center gap-2 sm:gap-2.5 px-4 sm:px-6 md:px-7 py-1.5 sm:py-2 -mt-3 sm:-mt-4 mb-7 sm:mb-8 rounded-full bg-[#f97316] backdrop-blur-md transition-all duration-300 hover:scale-[1.03] active:scale-95 group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(249,115,22,1),0_0_60px_rgba(251,191,36,0.8)]"
+              className="inline-flex items-center justify-center gap-2 sm:gap-2.5 px-4 sm:px-6 md:px-7 py-1.5 sm:py-2 mb-6 sm:mb-7 rounded-full bg-[#f97316] transition-all duration-300 hover:scale-[1.03] active:scale-95 group cursor-pointer shadow-md hover:shadow-lg"
               title="Click to Enquire for Admissions 2027-28"
             >
               <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-80"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-white shadow-[0_0_8px_#ffffff]"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-white"></span>
               </span>
-              <span className="text-white font-black text-xs sm:text-sm md:text-base lg:text-lg tracking-wide sm:tracking-wider uppercase whitespace-nowrap drop-shadow-[0_1px_3px_rgba(0,0,0,0.2)]">
+              <span className="text-white font-black text-xs sm:text-sm md:text-base lg:text-lg tracking-wide sm:tracking-wider uppercase whitespace-nowrap">
                 ADMISSIONS OPEN 2027–28
               </span>
             </button>
