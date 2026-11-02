@@ -130,22 +130,15 @@ const Home: React.FC = () => {
             <button
               type="button"
               onClick={() => setIsFormOpen(true)}
-              className="neon-glow-admissions inline-flex items-center justify-center gap-2 sm:gap-3 px-3.5 sm:px-6 md:px-7 py-2 sm:py-2.5 mb-6 rounded-full bg-[#1e3a8a]/95 border-2 border-[#f97316] backdrop-blur-md transition-all duration-300 hover:scale-[1.03] active:scale-95 group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(249,115,22,0.9),0_0_60px_rgba(251,191,36,0.6)]"
+              className="neon-glow-admissions inline-flex items-center justify-center gap-2.5 sm:gap-3 px-5 sm:px-8 md:px-9 py-2.5 sm:py-3 mb-6 rounded-full bg-[#f97316] border-2 border-white/80 backdrop-blur-md transition-all duration-300 hover:scale-[1.03] active:scale-95 group cursor-pointer shadow-xl hover:shadow-[0_0_30px_rgba(249,115,22,1),0_0_60px_rgba(251,191,36,0.8)]"
               title="Click to Enquire for Admissions 2027-28"
             >
-              <span className="relative flex h-2 w-2 sm:h-3 sm:w-3 shrink-0">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-80"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 sm:h-3 sm:w-3 bg-[#f97316] shadow-[0_0_12px_#f97316]"></span>
+              <span className="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3 shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-80"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-white shadow-[0_0_10px_#ffffff]"></span>
               </span>
-              <span className="neon-text-glow text-white font-black text-[12px] sm:text-base md:text-lg lg:text-xl tracking-wide sm:tracking-wider uppercase whitespace-nowrap">
+              <span className="text-white font-black text-sm sm:text-lg md:text-xl lg:text-2xl tracking-wide sm:tracking-wider uppercase whitespace-nowrap drop-shadow-[0_2px_4px_rgba(0,0,0,0.25)]">
                 ADMISSIONS OPEN 2027–28
-              </span>
-              <span className="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/10 group-hover:bg-[#f97316] text-xs font-bold text-amber-200 group-hover:text-white transition-all duration-300 border border-white/15">
-                <span>Enquire</span>
-                <ArrowRight size={12} className="transition-transform duration-300 group-hover:translate-x-0.5" />
-              </span>
-              <span className="sm:hidden inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10 group-hover:bg-[#f97316] text-amber-200 group-hover:text-white transition-all duration-300">
-                <ArrowRight size={11} />
               </span>
             </button>
             
