@@ -114,24 +114,23 @@ const Home: React.FC = () => {
       <section className="relative pt-16 sm:pt-20 md:pt-22 pb-10 sm:pb-14 min-h-[75vh] flex items-center justify-center overflow-hidden px-4 sm:px-8 lg:px-24 text-center">
         <div className="absolute inset-0 z-0">
           {HERO_IMAGES.map((img, idx) => (
-            <img 
+            <img
               key={idx}
-              src={img} 
-              alt={`School Slide ${idx + 1}`} 
+              src={img}
+              alt={`School Slide ${idx + 1}`}
               className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-1000 ease-in-out ${currentSlide === idx ? 'opacity-100' : 'opacity-0'}`}
             />
           ))}
           <div className="absolute inset-0 bg-[#ea580c]/50 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-white/50"></div>
         </div>
-        
+
         <div className="relative z-10 max-w-4xl mx-auto -translate-y-1 sm:-translate-y-2 md:-translate-y-3">
           <div className="animate-fade-in-up">
-            <button
-              type="button"
-              onClick={() => setIsFormOpen(true)}
+            <Link
+              to="/admissions"
               className="inline-flex items-center justify-center gap-2 sm:gap-2.5 px-4 sm:px-6 md:px-7 py-1.5 sm:py-2 mb-6 sm:mb-7 rounded-full bg-[#f97316] transition-all duration-300 hover:scale-[1.03] active:scale-95 group cursor-pointer shadow-md hover:shadow-lg"
-              title="Click to Enquire for Admissions 2027-28"
+              title="Admissions Open 2027-28 - Click to view Admissions"
             >
               <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-80"></span>
@@ -140,8 +139,8 @@ const Home: React.FC = () => {
               <span className="text-white font-black text-xs sm:text-sm md:text-base lg:text-lg tracking-wide sm:tracking-wider uppercase whitespace-nowrap">
                 ADMISSIONS OPEN 2027–28
               </span>
-            </button>
-            
+            </Link>
+
             <h1 className="text-white mb-6 leading-tight">
               <span className="text-2xl md:text-4xl font-serif italic block mb-1 opacity-95">Excellence in</span>
               <span className="text-4xl md:text-6xl font-bold relative inline-block">
@@ -189,7 +188,7 @@ const Home: React.FC = () => {
             <span className="inline-block px-4 py-1.5 bg-orange-50 text-[#f97316] rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-8 border border-orange-100">
               Education for Everyone
             </span>
-            
+
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-10 leading-tight tracking-tight">
               Building Confident,Capable & <br/>
               Compassionate <span className="text-[#f97316]">Leaders!</span>
@@ -208,7 +207,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Link 
+              <Link
                 to="/enquire"
                 className="bg-[#1e3a8a] text-white px-10 py-4 font-black text-xs uppercase tracking-widest rounded-lg hover:shadow-[0_10px_30px_rgba(30,58,138,0.3)] transition-all transform hover:-translate-y-1"
               >
@@ -220,15 +219,15 @@ const Home: React.FC = () => {
             </div>
           </div>
 
-          
-  
+
+
   <div className="relative z-10 p-4 bg-white rounded-[2.5rem] shadow-2xl border border-orange-50">
-    
+
     <div className="relative overflow-hidden rounded-[2rem] aspect-video">
       <AnimatePresence mode="wait">
-        <motion.img 
+        <motion.img
           key={currentLeaderSlide}
-          src={LEADERS_IMAGES[currentLeaderSlide]} 
+          src={LEADERS_IMAGES[currentLeaderSlide]}
           alt="GEMS Students Group"
           initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -287,7 +286,7 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-[#ea580c] opacity-50">
           <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #fff 1.2px, transparent 1.2px)', backgroundSize: '30px 30px' }}></div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
   {/* LEFT CONTENT */}
@@ -344,14 +343,14 @@ const Home: React.FC = () => {
  </section>
             <div className="max-w-xl mx-auto mb-8">
               <div className="bg-white p-1 rounded-full flex items-center shadow-xl border border-white/50">
-                {/* <input 
-                  type="text" 
+                {/* <input
+                  type="text"
                   value={phoneNumber}
                   onChange={(e) => setPhoneNumber(e.target.value)}
-                  placeholder="Enter Your Number" 
+                  placeholder="Enter Your Number"
                   className="flex-grow px-5 py-2.5 bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none font-bold text-sm"
                 /> */}
-                {/* <button 
+                {/* <button
                   onClick={handleCallRequest}
                   className="bg-[#1e3a8a] hover:bg-[#1a337a] text-white px-5 py-3 rounded-full font-black text-[9px] uppercase tracking-[0.1em] flex items-center gap-2 transition-all shadow-md"
                 >
@@ -376,10 +375,10 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-         
+
 
 );
-      
+
           {/* World Class Facilities Section - THEME UPDATED TO LIGHT ORANGE/NAVY */}
 <section ref={facilitiesSection.ref} className="py-16 bg-[#fff9f2]">
   <div className="max-w-7xl mx-auto px-8">
