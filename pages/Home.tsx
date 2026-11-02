@@ -111,7 +111,7 @@ const Home: React.FC = () => {
   return (
     <div className="bg-[#fff9f2] overflow-hidden">
       {/* Hero Section - Using Orange/Navy Mix Overlay */}
-      <section className="relative pt-24 min-h-[75vh] flex items-center justify-center overflow-hidden px-8 lg:px-24 text-center">
+      <section className="relative pt-24 min-h-[75vh] flex items-center justify-center overflow-hidden px-4 sm:px-8 lg:px-24 text-center">
         <div className="absolute inset-0 z-0">
           {HERO_IMAGES.map((img, idx) => (
             <img 
@@ -127,9 +127,18 @@ const Home: React.FC = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
-            <span className="inline-block px-4 py-1.5 bg-[#f97316] rounded-[4px] text-[10px] font-black uppercase tracking-[0.2em] text-white mb-6 shadow-lg">
-              Admissions Open 2027-28
-            </span>
+            <Link
+              to="/admissions"
+              className="neon-glow-admissions inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-8 md:px-10 py-2 sm:py-3.5 mb-6 sm:mb-8 rounded-full bg-[#1e3a8a]/95 border-2 border-[#f97316] backdrop-blur-md transition-all duration-300 hover:scale-105 group cursor-pointer max-w-[95vw] sm:max-w-full"
+            >
+              <span className="relative flex h-2.5 w-2.5 sm:h-3.5 sm:w-3.5 shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-80"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3.5 sm:w-3.5 bg-[#f97316] shadow-[0_0_12px_#f97316]"></span>
+              </span>
+              <span className="neon-text-glow text-white font-black text-sm sm:text-xl md:text-2xl lg:text-3xl tracking-wide sm:tracking-wider uppercase whitespace-nowrap">
+                ADMISSIONS OPEN 2027–28
+              </span>
+            </Link>
             
             <h1 className="text-white mb-6 leading-tight">
               <span className="text-2xl md:text-4xl font-serif italic block mb-1 opacity-95">Excellence in</span>
