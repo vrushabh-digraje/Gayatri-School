@@ -9,9 +9,9 @@ import { NAV_LINKS } from '../constants';
 const FooterLogo: React.FC = () => (
   <div className="flex items-center gap-5 group mb-10">
     <div className="relative w-20 h-20 xl:w-24 xl:h-24 flex-shrink-0">
-      <img 
-        src="/Logo.png" 
-        alt="GEMS Logo" 
+      <img
+        src="/Logo.png"
+        alt="GEMS Logo"
         className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500"
       />
     </div>
@@ -78,37 +78,45 @@ const Footer: React.FC = () => {
 
             {/* Column 2: In Front of Home Links & Pay Now Button */}
             <div className="flex flex-col space-y-4 text-slate-400 font-bold uppercase text-[11px] tracking-widest">
-              <a 
-                href="https://gemscbse.prisms.in/onlinerecruitment" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://gemscbse.prisms.in/onlinerecruitment"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
               >
                 Career <ExternalLink size={11} className="text-slate-500 shrink-0" />
               </a>
-              <a 
-                href="https://gemscbse.prisms.in/onlineenquiry" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://gemscbse.prisms.in/onlineenquiry"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
               >
                 Admission Enquiry <ExternalLink size={11} className="text-slate-500 shrink-0" />
               </a>
-              <a 
-                href="https://gemscbse.prisms.in/onlinevisitor" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://gemscbse.prisms.in/onlinevisitor"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap"
               >
                 Online Appointment <ExternalLink size={11} className="text-slate-500 shrink-0" />
               </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdK_r_K5C7vZkQRjtMiXqrVM-1LC3IwU9Zrx5CGfTLut29UEQ/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap text-amber-400"
+              >
+                School Franchise Form <ExternalLink size={11} className="text-amber-400 shrink-0" />
+              </a>
 
               {/* Pay Now Button */}
               <div className="pt-2">
-                <a 
-                  href="https://gemscbse.prisms.in/pay" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://gemscbse.prisms.in/pay"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-5 py-3 rounded-xl font-black text-xs uppercase tracking-wider shadow-lg hover:shadow-orange-500/25 hover:scale-105 transition-all duration-300 whitespace-nowrap"
                 >
                   <CreditCard size={15} className="shrink-0" /> Pay Now
