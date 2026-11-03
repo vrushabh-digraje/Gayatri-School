@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-1.5 whitespace-nowrap text-amber-400"
               >
-                School Franchise Form <ExternalLink size={11} className="text-amber-400 shrink-0" />
+                Preschool Franchise Form <ExternalLink size={11} className="text-amber-400 shrink-0" />
               </a>
 
               {/* Pay Now Button */}
