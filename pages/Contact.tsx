@@ -5,6 +5,7 @@ import * as ReactRouterDOM from 'react-router-dom';
 const { Link } = ReactRouterDOM as any;
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin, Headphones, ArrowRight, Loader2, CheckCircle2 } from 'lucide-react';
 import { handleEmailClick } from '../constants';
+import SubmissionSuccessModal from '../components/SubmissionSuccessModal';
 
 const Contact: React.FC = () => {
   const [isSending, setIsSending] = useState(false);
@@ -206,6 +207,12 @@ Message: ${message}`;
           </div>
         </div>
       </section>
+
+      {/* Submission Success Modal */}
+      <SubmissionSuccessModal 
+        isOpen={isSubmitted} 
+        onClose={() => setIsSubmitted(false)} 
+      />
     </div>
   );
 };

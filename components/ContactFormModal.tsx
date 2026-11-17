@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
+import SubmissionSuccessModal from './SubmissionSuccessModal';
 
 interface ContactFormModalProps {
   isOpen: boolean;
@@ -8,34 +9,44 @@ interface ContactFormModalProps {
 }
 
 const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose }) => {
-const [name, setName] = useState("");
-const [phone, setPhone] = useState("");
-const [email, setEmail] = useState("");
-const [standard, setStandard] = useState("");
-const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [standard, setStandard] = useState("");
+  const [message, setMessage] = useState("");
+  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
+
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  try {
-    const res = await fetch("https://script.google.com/macros/s/AKfycbwU7PRitFynQcoTYlsDD64sX7Qyak-g7s3oPCHLVft8MRT1ijdXKKad6ZQOB5oamwfSLQ/exec", {
-      method: "POST",
-      body: JSON.stringify({
-        name,
-        phone,
-        email,
-        standard,
-        message
-      }),
-    });
+    try {
+      await fetch("https://script.google.com/macros/s/AKfycbwU7PRitFynQcoTYlsDD64sX7Qyak-g7s3oPCHLVft8MRT1ijdXKKad6ZQOB5oamwfSLQ/exec", {
+        method: "POST",
+        body: JSON.stringify({
+          name,
+          phone,
+          email,
+          standard,
+          message
+        }),
+      });
 
-    alert("Submitted Successfully!");
-    onClose();
+      setName("");
+      setPhone("");
+      setEmail("");
+      setStandard("");
+      setMessage("");
+      setIsSuccessOpen(true);
 
-  } catch (error) {
-    alert("Error submitting form");
-    console.log(error);
+    } catch (error) {
+      alert("Error submitting form. Please try again or call us directly.");
+      console.log(error);
+    }
+  };
+
+  if (isSuccessOpen) {
+    return <SubmissionSuccessModal isOpen={true} onClose={() => { setIsSuccessOpen(false); onClose(); }} />;
   }
-};
 
   if (!isOpen) return null;
 

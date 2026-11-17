@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { MessageSquareText, X } from 'lucide-react';
+import SubmissionSuccessModal from './SubmissionSuccessModal';
 
 const FloatingContactButton: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
 
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -30,18 +32,17 @@ const handleSubmit = async (e: React.FormEvent) => {
       }
     );
 
-    alert("Submitted Successfully!");
-
     setName("");
     setPhone("");
     setEmail("");
     setMessage("");
     setIsOpen(false);
+    setIsSuccessOpen(true);
 
   } catch (error) {
-  console.error("Submit error:", error);
-  alert("Error submitting form");
-}
+    console.error("Submit error:", error);
+    alert("Error submitting form");
+  }
 };
 
   return (
@@ -149,6 +150,12 @@ const handleSubmit = async (e: React.FormEvent) => {
           </div>
         </div>
       )}
+
+      {/* Submission Success Modal */}
+      <SubmissionSuccessModal 
+        isOpen={isSuccessOpen} 
+        onClose={() => setIsSuccessOpen(false)} 
+      />
     </>
   );
 };

@@ -1,10 +1,12 @@
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { ArrowRight, Calendar, User, MapPin, Phone, School, Users, ClipboardList } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import SubmissionSuccessModal from '../components/SubmissionSuccessModal';
 
 const Enquire: React.FC = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
+  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -13,8 +15,8 @@ const Enquire: React.FC = () => {
     // Replace the placeholders with your EmailJS service/template/public key
     emailjs.sendForm('service_xb6srr8', 'template_siji7pm', formRef.current, 'YSncJxj3J3xDzgjTn')
       .then(() => {
-        alert('Enquiry submitted — thank you!');
         formRef.current?.reset();
+        setIsSuccessOpen(true);
       }, (error) => {
         console.error('EmailJS error:', error);
         alert('Failed to send enquiry. Please try again later.');
@@ -245,6 +247,12 @@ const Enquire: React.FC = () => {
           </form>
         </div>
       </div>
+
+      {/* Submission Success Modal */}
+      <SubmissionSuccessModal 
+        isOpen={isSuccessOpen} 
+        onClose={() => setIsSuccessOpen(false)} 
+      />
     </div>
   );
 };
