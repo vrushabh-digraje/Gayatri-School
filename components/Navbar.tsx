@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Twitter, ChevronDown, ChevronRight } from 'lucide-react';
-import { NAV_LINKS } from '../constants';
+import { NAV_LINKS, handleEmailClick } from '../constants';
 import ContactFormModal from './ContactFormModal';
 
 const Logo: React.FC<{ light?: boolean }> = ({ light = false }) => (
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
             <a href="tel:+919527764646" className="flex items-center hover:text-orange-400 transition-colors">
               <Phone size={12} className="mr-2" /> +91 95277 64646
             </a>
-            <a href="mailto:contact@gayatrischoolpune.com" className="flex items-center hover:text-orange-400 transition-colors">
+            <a href="mailto:contact@gayatrischoolpune.com" onClick={handleEmailClick} className="flex items-center hover:text-orange-400 transition-colors">
               <Mail size={12} className="mr-2" /> contact@gayatrischoolpune.com
             </a>
           </div>

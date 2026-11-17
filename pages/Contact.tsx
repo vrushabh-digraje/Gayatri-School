@@ -4,6 +4,7 @@ import * as ReactRouterDOM from 'react-router-dom';
 // Fix: Use namespace import to bypass named export resolution issues
 const { Link } = ReactRouterDOM as any;
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin, Headphones, ArrowRight, Loader2, CheckCircle2 } from 'lucide-react';
+import { handleEmailClick } from '../constants';
 
 const Contact: React.FC = () => {
   const [isSending, setIsSending] = useState(false);
@@ -76,6 +77,7 @@ Message: ${message}`;
               <h3 className="text-xl font-black text-slate-900 mb-6 tracking-tight">Our Email Address</h3>
               <a 
                 href="mailto:contact@gayatrischoolpune.com" 
+                onClick={handleEmailClick}
                 className="text-[#1e3a8a] font-bold text-lg hover:text-[#f97316] transition-colors inline-block break-all"
               >
                 contact@gayatrischoolpune.com

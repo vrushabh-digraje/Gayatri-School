@@ -4,7 +4,7 @@ import * as ReactRouterDOM from 'react-router-dom';
 // Fix: Use namespace import to bypass named export resolution issues
 const { Link } = ReactRouterDOM as any;
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube, ExternalLink, CreditCard } from 'lucide-react';
-import { NAV_LINKS } from '../constants';
+import { NAV_LINKS, handleEmailClick } from '../constants';
 
 const FooterLogo: React.FC = () => (
   <div className="flex items-center gap-5 group mb-10">
@@ -147,6 +147,7 @@ const Footer: React.FC = () => {
               <Mail size={24} className="text-[#0056b3] shrink-0" />
               <a 
                 href="mailto:contact@gayatrischoolpune.com" 
+                onClick={handleEmailClick}
                 className="hover:text-white transition-colors break-all"
               >
                 contact@gayatrischoolpune.com

@@ -105,3 +105,13 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     alt: 'Sports Day'
   }
 ];
+
+export const handleEmailClick = (e?: React.MouseEvent<HTMLAnchorElement>) => {
+  const isMobile = typeof navigator !== 'undefined' && /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  if (!isMobile) {
+    if (e) e.preventDefault();
+    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=contact@gayatrischoolpune.com', '_blank', 'noopener,noreferrer');
+  }
+};
+
+
