@@ -136,11 +136,21 @@ const Footer: React.FC = () => {
             </li>
             <li className="flex items-center space-x-5">
               <Phone size={24} className="text-[#0056b3] shrink-0" />
-              <span>+91 95277 64646</span>
+              <a 
+                href="tel:+919527764646" 
+                className="hover:text-white transition-colors"
+              >
+                +91 95277 64646
+              </a>
             </li>
             <li className="flex items-center space-x-5">
               <Mail size={24} className="text-[#0056b3] shrink-0" />
-              <span>contact@gayatrischoolpune.com</span>
+              <a 
+                href="mailto:contact@gayatrischoolpune.com" 
+                className="hover:text-white transition-colors break-all"
+              >
+                contact@gayatrischoolpune.com
+              </a>
             </li>
           </ul>
         </div>

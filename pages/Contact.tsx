@@ -60,7 +60,12 @@ Message: ${message}`;
   <Phone size={24} />
 </div>
               <h3 className="text-xl font-black text-slate-900 mb-6 tracking-tight">Contact Phone Number</h3>
-              <p className="text-[#1e3a8a] font-bold text-lg">+91 95277 64646</p>
+              <a 
+                href="tel:+919527764646" 
+                className="text-[#1e3a8a] font-bold text-lg hover:text-[#f97316] transition-colors inline-block"
+              >
+                +91 95277 64646
+              </a>
             </div>
 
             {/* Email Card */}
@@ -69,7 +74,12 @@ Message: ${message}`;
   <Mail size={24} />
 </div>
               <h3 className="text-xl font-black text-slate-900 mb-6 tracking-tight">Our Email Address</h3>
-              <p className="text-[#1e3a8a] font-bold text-lg">contact@gayatrischoolpune.com</p>
+              <a 
+                href="mailto:contact@gayatrischoolpune.com" 
+                className="text-[#1e3a8a] font-bold text-lg hover:text-[#f97316] transition-colors inline-block break-all"
+              >
+                contact@gayatrischoolpune.com
+              </a>
             </div>
 
             {/* Location Card */}
