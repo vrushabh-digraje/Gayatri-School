@@ -6,12 +6,28 @@ const { useNavigate } = ReactRouterDOM as any;
 interface SubmissionSuccessModalProps {
   isOpen: boolean;
   onClose: () => void;
+  redirectTo?: string;
 }
 
-const SubmissionSuccessModal: React.FC<SubmissionSuccessModalProps> = ({ isOpen, onClose }) => {
+const SubmissionSuccessModal: React.FC<SubmissionSuccessModalProps> = ({ 
+  isOpen, 
+  onClose,
+  redirectTo = '/thank-you'
+}) => {
   const navigate = useNavigate ? useNavigate() : null;
 
   if (!isOpen) return null;
+
+  const handleOk = () => {
+    onClose();
+    if (redirectTo) {
+      if (navigate) {
+        navigate(redirectTo);
+      } else {
+        window.location.href = redirectTo;
+      }
+    }
+  };
 
   const handleExplore = () => {
     onClose();
@@ -116,7 +132,7 @@ const SubmissionSuccessModal: React.FC<SubmissionSuccessModalProps> = ({ isOpen,
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3">
             <button
-              onClick={onClose}
+              onClick={handleOk}
               type="button"
               className="flex-1 bg-[#f97316] hover:bg-[#ea580c] text-white py-3.5 px-6 rounded-xl font-black text-xs uppercase tracking-wider shadow-lg shadow-orange-500/25 transition-all transform hover:scale-[1.02] active:scale-95 cursor-pointer"
             >

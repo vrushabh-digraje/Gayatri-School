@@ -27,6 +27,7 @@ import CBSESchoolPimpriChinchwad from './pages/CBSESchoolPimpriChinchwad';
 import EnglishMediumSchoolMoshi from './pages/EnglishMediumSchoolMoshi';
 import SchoolInGandharvNagariMoshi from './pages/SchoolInGandharvNagariMoshi';
 import CBSESchoolInMoshi from './pages/CBSESchoolInMoshi';
+import ThankYou from './pages/ThankYou';
 import FloatingContactButton from './components/FloatingContactButton';
 import WhatsAppButton from './components/WhatsAppButton';
 import ContactFormModal from './components/ContactFormModal';
@@ -127,6 +128,10 @@ const App: React.FC = () => {
             
             <Route path="/contact" element={<Contact />} />
             <Route path="/contact-us" element={<Contact />} />
+            
+            {/* Thank You Page */}
+            <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/thankyou" element={<ThankYou />} />
           </Routes>
         </main>
         <Footer />

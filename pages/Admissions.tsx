@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { ClipboardList, UserCheck, CreditCard, CheckCircle2, ArrowRight, Star, Loader2 } from 'lucide-react';
 import * as ReactRouterDOM from 'react-router-dom';
 const { Link } = ReactRouterDOM as any;
+import SubmissionSuccessModal from '../components/SubmissionSuccessModal';
 
 const Admissions: React.FC = () => {
   const [isSending, setIsSending] = useState(false);
@@ -174,26 +175,26 @@ const Admissions: React.FC = () => {
               
             </div>
 
-            <form className="space-y-8">
+            <form className="space-y-8" onSubmit={handleSubmit}>
               <div className="space-y-1">
                 <label className="text-[11px] font-bold text-slate-400 uppercase tracking-widest ml-1">Name</label>
-                <input type="text" className="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-indigo-600 font-medium transition-colors" placeholder="Full Name" />
+                <input required type="text" className="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-indigo-600 font-medium transition-colors" placeholder="Full Name" />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-1">
                   <label className="text-[11px] font-bold text-slate-400 uppercase tracking-widest ml-1">Email</label>
-                  <input type="email" className="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-indigo-600 font-medium transition-colors" placeholder="Email Address" />
+                  <input required type="email" className="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-indigo-600 font-medium transition-colors" placeholder="Email Address" />
                 </div>
                 <div className="space-y-1">
                   <label className="text-[11px] font-bold text-slate-400 uppercase tracking-widest ml-1">Phone</label>
-                  <input type="tel" className="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-indigo-600 font-medium transition-colors" placeholder="Phone Number" />
+                  <input required type="tel" className="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-indigo-600 font-medium transition-colors" placeholder="Phone Number" />
                 </div>
               </div>
 
               <div className="space-y-1">
                 <label className="text-[11px] font-bold text-slate-400 uppercase tracking-widest ml-1">Select Standard</label>
-                <select className="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-indigo-600 font-medium transition-colors bg-transparent appearance-none cursor-pointer">
+                <select required className="w-full border-b border-slate-200 py-3 focus:outline-none focus:border-indigo-600 font-medium transition-colors bg-transparent appearance-none cursor-pointer">
                   <option value="">Choose Standard</option>
                   <option value="playgroup">Playgroup</option>
                   <option value="nursery">Nursery</option>
@@ -216,14 +217,32 @@ const Admissions: React.FC = () => {
               </div>
 
               <div className="pt-4">
-                <button className="w-full bg-gradient-to-r from-[#4d69e7] to-[#a855f7] text-white py-5 rounded-lg font-black text-xs uppercase tracking-[0.2em] flex items-center justify-center gap-3 hover:shadow-2xl transition-all transform hover:scale-[1.01]">
-                  Get It Now <ArrowRight size={18} />
+                <button 
+                  type="submit"
+                  disabled={isSending}
+                  className="w-full bg-gradient-to-r from-[#4d69e7] to-[#a855f7] text-white py-5 rounded-lg font-black text-xs uppercase tracking-[0.2em] flex items-center justify-center gap-3 hover:shadow-2xl transition-all transform hover:scale-[1.01] disabled:opacity-70 cursor-pointer"
+                >
+                  {isSending ? (
+                    <>
+                      <Loader2 size={18} className="animate-spin" /> Submitting...
+                    </>
+                  ) : (
+                    <>
+                      Get It Now <ArrowRight size={18} />
+                    </>
+                  )}
                 </button>
               </div>
             </form>
           </div>
         </div>
       </section>
+
+      {/* Submission Success Modal */}
+      <SubmissionSuccessModal 
+        isOpen={isSubmitted} 
+        onClose={() => setIsSubmitted(false)} 
+      />
     </div>
   );
 };
