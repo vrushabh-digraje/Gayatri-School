@@ -9,6 +9,7 @@ import { handleEmailClick } from '../constants';
 const Contact: React.FC = () => {
   const navigate = useNavigate ? useNavigate() : null;
   const [isSending, setIsSending] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
