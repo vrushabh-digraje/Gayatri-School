@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
-import SubmissionSuccessModal from './SubmissionSuccessModal';
+import * as ReactRouterDOM from 'react-router-dom';
+const { useNavigate } = ReactRouterDOM as any;
 
 interface ContactFormModalProps {
   isOpen: boolean;
@@ -9,15 +10,17 @@ interface ContactFormModalProps {
 }
 
 const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose }) => {
+  const navigate = useNavigate ? useNavigate() : null;
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [standard, setStandard] = useState("");
   const [message, setMessage] = useState("");
-  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
       await fetch("https://script.google.com/macros/s/AKfycbwU7PRitFynQcoTYlsDD64sX7Qyak-g7s3oPCHLVft8MRT1ijdXKKad6ZQOB5oamwfSLQ/exec", {
@@ -36,17 +39,21 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose }) 
       setEmail("");
       setStandard("");
       setMessage("");
-      setIsSuccessOpen(true);
+      setIsSubmitting(false);
+      onClose();
+
+      if (navigate) {
+        navigate('/thank-you');
+      } else {
+        window.location.href = '/thank-you';
+      }
 
     } catch (error) {
+      setIsSubmitting(false);
       alert("Error submitting form. Please try again or call us directly.");
       console.log(error);
     }
   };
-
-  if (isSuccessOpen) {
-    return <SubmissionSuccessModal isOpen={true} onClose={() => { setIsSuccessOpen(false); onClose(); }} />;
-  }
 
   if (!isOpen) return null;
 
@@ -154,9 +161,10 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({ isOpen, onClose }) 
           <div className="pt-4">
             <button
               type="submit"
-              className="w-full bg-[#1e3a8a] hover:bg-[#1a337a] text-white py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-blue-200 transform hover:-translate-y-0.5 active:scale-95"
+              disabled={isSubmitting}
+              className="w-full bg-[#1e3a8a] hover:bg-[#1a337a] text-white py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-blue-200 transform hover:-translate-y-0.5 active:scale-95 disabled:opacity-70 cursor-pointer"
             >
-              Submit
+              {isSubmitting ? "Submitting..." : "Submit"}
             </button>
           </div>
         </form>

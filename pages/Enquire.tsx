@@ -1,23 +1,32 @@
 
 import React, { useRef, useState } from 'react';
-import { ArrowRight, Calendar, User, MapPin, Phone, School, Users, ClipboardList } from 'lucide-react';
+import { ArrowRight, Calendar, User, MapPin, Phone, School, Users, ClipboardList, Loader2 } from 'lucide-react';
+import * as ReactRouterDOM from 'react-router-dom';
+const { useNavigate } = ReactRouterDOM as any;
 import emailjs from '@emailjs/browser';
-import SubmissionSuccessModal from '../components/SubmissionSuccessModal';
 
 const Enquire: React.FC = () => {
+  const navigate = useNavigate ? useNavigate() : null;
   const formRef = useRef<HTMLFormElement | null>(null);
-  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formRef.current) return;
+    setIsSubmitting(true);
 
     // Replace the placeholders with your EmailJS service/template/public key
     emailjs.sendForm('service_xb6srr8', 'template_siji7pm', formRef.current, 'YSncJxj3J3xDzgjTn')
       .then(() => {
+        setIsSubmitting(false);
         formRef.current?.reset();
-        setIsSuccessOpen(true);
+        if (navigate) {
+          navigate('/thank-you');
+        } else {
+          window.location.href = '/thank-you';
+        }
       }, (error) => {
+        setIsSubmitting(false);
         console.error('EmailJS error:', error);
         alert('Failed to send enquiry. Please try again later.');
       });
@@ -235,9 +244,18 @@ const Enquire: React.FC = () => {
             <div className="pt-16 text-center">
               <button 
                 type="submit"
-                className="bg-[#1e3a8a] text-white px-20 py-6 rounded-3xl font-black text-sm uppercase tracking-[0.3em] flex items-center justify-center gap-4 mx-auto hover:bg-blue-800 hover:shadow-2xl transition-all transform hover:scale-[1.02] shadow-[0_20px_60px_rgba(30,58,138,0.2)]"
+                disabled={isSubmitting}
+                className="bg-[#1e3a8a] text-white px-20 py-6 rounded-3xl font-black text-sm uppercase tracking-[0.3em] flex items-center justify-center gap-4 mx-auto hover:bg-blue-800 hover:shadow-2xl transition-all transform hover:scale-[1.02] shadow-[0_20px_60px_rgba(30,58,138,0.2)] disabled:opacity-70 cursor-pointer"
               >
-                SUBMIT <ArrowRight size={20} />
+                {isSubmitting ? (
+                  <>
+                    <Loader2 size={20} className="animate-spin" /> Submitting...
+                  </>
+                ) : (
+                  <>
+                    SUBMIT <ArrowRight size={20} />
+                  </>
+                )}
               </button>
               <p className="mt-8 text-slate-400 font-bold text-[10px] uppercase tracking-widest">
                 Fields marked with <span className="text-rose-500">*</span> are mandatory for processing your application.
@@ -247,12 +265,6 @@ const Enquire: React.FC = () => {
           </form>
         </div>
       </div>
-
-      {/* Submission Success Modal */}
-      <SubmissionSuccessModal 
-        isOpen={isSuccessOpen} 
-        onClose={() => setIsSuccessOpen(false)} 
-      />
     </div>
   );
 };

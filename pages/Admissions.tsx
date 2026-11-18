@@ -2,20 +2,23 @@
 import React, { useState } from 'react';
 import { ClipboardList, UserCheck, CreditCard, CheckCircle2, ArrowRight, Star, Loader2 } from 'lucide-react';
 import * as ReactRouterDOM from 'react-router-dom';
-const { Link } = ReactRouterDOM as any;
-import SubmissionSuccessModal from '../components/SubmissionSuccessModal';
+const { Link, useNavigate } = ReactRouterDOM as any;
 
 const Admissions: React.FC = () => {
+  const navigate = useNavigate ? useNavigate() : null;
   const [isSending, setIsSending] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSending(true);
     setTimeout(() => {
       setIsSending(false);
-      setIsSubmitted(true);
-    }, 2000);
+      if (navigate) {
+        navigate('/thank-you');
+      } else {
+        window.location.href = '/thank-you';
+      }
+    }, 800);
   };
 
   return (
@@ -237,12 +240,6 @@ const Admissions: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Submission Success Modal */}
-      <SubmissionSuccessModal 
-        isOpen={isSubmitted} 
-        onClose={() => setIsSubmitted(false)} 
-      />
     </div>
   );
 };

@@ -1,49 +1,59 @@
 import React, { useState } from 'react';
 import { MessageSquareText, X } from 'lucide-react';
-import SubmissionSuccessModal from './SubmissionSuccessModal';
+import * as ReactRouterDOM from 'react-router-dom';
+const { useNavigate } = ReactRouterDOM as any;
 
 const FloatingContactButton: React.FC = () => {
+  const navigate = useNavigate ? useNavigate() : null;
   const [isOpen, setIsOpen] = useState(false);
-  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
-  try {
-    await fetch(
-      "https://script.google.com/macros/s/AKfycbWU7PRitFynQcoTYlsDD64sX7Qyak-g7s3oPCHLVft8MRT1ijdXKKad6ZO0B5oamwfSLQ/exec",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "text/plain;charset=utf-8"
-        },
-        body: JSON.stringify({
-          name,
-          phone,
-          email,
-          standard: "Floating Contact Button",
-          message
-        }),
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbWU7PRitFynQcoTYlsDD64sX7Qyak-g7s3oPCHLVft8MRT1ijdXKKad6ZO0B5oamwfSLQ/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+          },
+          body: JSON.stringify({
+            name,
+            phone,
+            email,
+            standard: "Floating Contact Button",
+            message
+          }),
+        }
+      );
+
+      setName("");
+      setPhone("");
+      setEmail("");
+      setMessage("");
+      setIsSubmitting(false);
+      setIsOpen(false);
+
+      if (navigate) {
+        navigate('/thank-you');
+      } else {
+        window.location.href = '/thank-you';
       }
-    );
 
-    setName("");
-    setPhone("");
-    setEmail("");
-    setMessage("");
-    setIsOpen(false);
-    setIsSuccessOpen(true);
-
-  } catch (error) {
-    console.error("Submit error:", error);
-    alert("Error submitting form");
-  }
-};
+    } catch (error) {
+      setIsSubmitting(false);
+      console.error("Submit error:", error);
+      alert("Error submitting form. Please try again or call us directly.");
+    }
+  };
 
   return (
     <>
@@ -141,21 +151,16 @@ const handleSubmit = async (e: React.FormEvent) => {
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full bg-[#1e3a8a] hover:bg-[#1a337a] text-white py-4 rounded-full font-bold text-lg transition-all shadow-lg"
+                disabled={isSubmitting}
+                className="w-full bg-[#1e3a8a] hover:bg-[#1a337a] text-white py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-blue-200 transform hover:-translate-y-0.5 active:scale-95 disabled:opacity-70 cursor-pointer"
               >
-                Submit
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
 
             </form>
           </div>
         </div>
       )}
-
-      {/* Submission Success Modal */}
-      <SubmissionSuccessModal 
-        isOpen={isSuccessOpen} 
-        onClose={() => setIsSuccessOpen(false)} 
-      />
     </>
   );
 };

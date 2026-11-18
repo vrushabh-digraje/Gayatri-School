@@ -2,38 +2,41 @@
 import React, { useState } from 'react';
 import * as ReactRouterDOM from 'react-router-dom';
 // Fix: Use namespace import to bypass named export resolution issues
-const { Link } = ReactRouterDOM as any;
+const { Link, useNavigate } = ReactRouterDOM as any;
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin, Headphones, ArrowRight, Loader2, CheckCircle2 } from 'lucide-react';
 import { handleEmailClick } from '../constants';
-import SubmissionSuccessModal from '../components/SubmissionSuccessModal';
 
 const Contact: React.FC = () => {
+  const navigate = useNavigate ? useNavigate() : null;
   const [isSending, setIsSending] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const form = e.currentTarget;
-  const name = (form[0] as HTMLInputElement).value;
-  const email = (form[1] as HTMLInputElement).value;
-  const phone = (form[2] as HTMLInputElement).value;
-  const standard = (form[3] as HTMLSelectElement).value;
-  const message = (form[4] as HTMLTextAreaElement).value;
+    const form = e.currentTarget;
+    const name = (form[0] as HTMLInputElement).value;
+    const email = (form[1] as HTMLInputElement).value;
+    const phone = (form[2] as HTMLInputElement).value;
+    const standard = (form[3] as HTMLSelectElement).value;
+    const message = (form[4] as HTMLTextAreaElement).value;
 
-  const text = `New Admission Inquiry:%0A
+    const text = `New Admission Inquiry:%0A
 Name: ${name}%0A
 Email: ${email}%0A
 Phone: ${phone}%0A
 Class: ${standard}%0A
 Message: ${message}`;
 
-  const whatsappURL = `https://wa.me/919527764646?text=${text}`;
+    const whatsappURL = `https://wa.me/919527764646?text=${text}`;
 
-  window.open(whatsappURL, "_blank");
+    window.open(whatsappURL, "_blank");
 
-  setIsSubmitted(true);
-};
+    if (navigate) {
+      navigate('/thank-you');
+    } else {
+      window.location.href = '/thank-you';
+    }
+  };
 
   return (
     <div className="bg-[#fffaf2] min-h-screen">
@@ -207,12 +210,6 @@ Message: ${message}`;
           </div>
         </div>
       </section>
-
-      {/* Submission Success Modal */}
-      <SubmissionSuccessModal 
-        isOpen={isSubmitted} 
-        onClose={() => setIsSubmitted(false)} 
-      />
     </div>
   );
 };
