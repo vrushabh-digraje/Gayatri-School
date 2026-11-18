@@ -69,73 +69,85 @@ const HashCleaner: React.FC = () => {
   return null;
 };
 
-const App: React.FC = () => {
+const AppContent: React.FC = () => {
+  const location = useLocation();
   const [isAutoModalOpen, setIsAutoModalOpen] = useState(false);
+  const isThankYouPage = location.pathname === '/thank-you' || location.pathname === '/thankyou';
 
   useEffect(() => {
+    if (isThankYouPage) return;
+
     const timer = setTimeout(() => {
       setIsAutoModalOpen(true);
-    }, 1000); // Show after 1 second
+    }, 1500); // Show after 1.5 seconds
     
     return () => clearTimeout(timer);
-  }, []);
+  }, [isThankYouPage]);
 
+  return (
+    <div className="flex flex-col min-h-screen w-full overflow-x-clip">
+      <Navbar />
+      <FloatingContactButton />
+      <WhatsAppButton />
+      {!isThankYouPage && (
+        <ContactFormModal isOpen={isAutoModalOpen} onClose={() => setIsAutoModalOpen(false)} />
+      )}
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/admissions" element={<Admissions />} />
+          <Route path="/enquire" element={<Enquire />} />
+          
+          {/* Academics Sub-routes */}
+          <Route path="/academics" element={<Navigate to="/" replace />} />
+          <Route path="/academics/pre-primary" element={<PrePrimary />} />
+          <Route path="/academics/primary" element={<Primary />} />
+          <Route path="/academics/secondary" element={<Secondary />} />
+          
+          {/* CBSE Sub-routes */}
+          <Route path="/cbse" element={<MPD />} />
+          <Route path="/cbse-school-in-pimpri-chinchwad" element={<CBSESchoolPimpriChinchwad />} />
+          <Route path="/english-medium-school-in-moshi" element={<EnglishMediumSchoolMoshi />} />
+          <Route path="/school-in-gandharv-nagari-moshi" element={<SchoolInGandharvNagariMoshi />} />
+          <Route path="/cbse-school-in-moshi" element={<CBSESchoolInMoshi />} />
+          <Route path="/cbse/curriculum" element={<PlaceholderPage title="CBSE Curriculum" />} />
+          <Route path="/cbse/affiliation" element={<PlaceholderPage title="Affiliation Letter" />} />
+          <Route path="/cbse/tc" element={<PlaceholderPage title="Transfer Certificates" />} />
+          
+          <Route path="/pay-fees" element={<PlaceholderPage title="Online Fee Payment" />} />
+          <Route path="/read-to-lead" element={<LeadToRead />} />
+          <Route path="/read-to-lead/video" element={<ReadToLeadVideo />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPostDetail />} />
+          
+          {/* Gallery / Media */}
+          <Route path="/events" element={<Events />} />
+          <Route path="/media/events" element={<Events />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="/media/achievements" element={<Achievements />} />
+          
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact-us" element={<Contact />} />
+          
+          {/* Thank You Page */}
+          <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/thankyou" element={<ThankYou />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+const App: React.FC = () => {
   return (
     <Router>
       <ScrollToTop />
       <HashCleaner />
-      <div className="flex flex-col min-h-screen w-full overflow-x-clip">
-        <Navbar />
-        <FloatingContactButton />
-        <WhatsAppButton />
-        <ContactFormModal isOpen={isAutoModalOpen} onClose={() => setIsAutoModalOpen(false)} />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/about-us" element={<About />} />
-            <Route path="/admissions" element={<Admissions />} />
-            <Route path="/enquire" element={<Enquire />} />
-            
-            {/* Academics Sub-routes */}
-            <Route path="/academics" element={<Navigate to="/" replace />} />
-            <Route path="/academics/pre-primary" element={<PrePrimary />} />
-            <Route path="/academics/primary" element={<Primary />} />
-            <Route path="/academics/secondary" element={<Secondary />} />
-            
-            {/* CBSE Sub-routes */}
-            <Route path="/cbse" element={<MPD />} />
-            <Route path="/cbse-school-in-pimpri-chinchwad" element={<CBSESchoolPimpriChinchwad />} />
-            <Route path="/english-medium-school-in-moshi" element={<EnglishMediumSchoolMoshi />} />
-            <Route path="/school-in-gandharv-nagari-moshi" element={<SchoolInGandharvNagariMoshi />} />
-            <Route path="/cbse-school-in-moshi" element={<CBSESchoolInMoshi />} />
-            <Route path="/cbse/curriculum" element={<PlaceholderPage title="CBSE Curriculum" />} />
-            <Route path="/cbse/affiliation" element={<PlaceholderPage title="Affiliation Letter" />} />
-            <Route path="/cbse/tc" element={<PlaceholderPage title="Transfer Certificates" />} />
-            
-            <Route path="/pay-fees" element={<PlaceholderPage title="Online Fee Payment" />} />
-            <Route path="/read-to-lead" element={<LeadToRead />} />
-            <Route path="/read-to-lead/video" element={<ReadToLeadVideo />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:id" element={<BlogPostDetail />} />
-            
-            {/* Gallery / Media */}
-            <Route path="/events" element={<Events />} />
-            <Route path="/media/events" element={<Events />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/achievements" element={<Achievements />} />
-            <Route path="/media/achievements" element={<Achievements />} />
-            
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/contact-us" element={<Contact />} />
-            
-            {/* Thank You Page */}
-            <Route path="/thank-you" element={<ThankYou />} />
-            <Route path="/thankyou" element={<ThankYou />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <AppContent />
     </Router>
   );
 };
